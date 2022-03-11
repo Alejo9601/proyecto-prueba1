@@ -5,13 +5,14 @@
   width: 100%;
   position: absolute;
   z-index: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /*both have a 50% of the total of logo-navbar-container*/
 .navbar,
 section#logo {
   background-color: transparent;
-  width: 50%;
   align-items: center; /*vertical center*/
 }
 
@@ -20,6 +21,7 @@ section#logo {
 }
 
 section#logo {
+  width: fit-content;
   justify-content: flex-start;
 }
 
@@ -39,15 +41,20 @@ section#logo {
 section#logo #logo {
   height: 50px;
   width: auto;
-  margin-left: 20%;
 }
 
 /*<------------------------------------------------------------------>*/
 /*Styles apllied to Banner component*/
 
 #banner-container {
-  width: calc(100vw);
+  min-height: 100vh;
   position: relative;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../img/programacion.jpg) no-repeat center center fixed;
+  /*background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed*/
+  background-size: cover;
 }
 
 section#init-profile-container {
@@ -56,12 +63,6 @@ section#init-profile-container {
   left: 25%;
   width: 50%;
   height: 50%;
-}
-
-section#background-img-container #background-img {
-  height: calc(100vh);
-  width: calc(100vw);
-  opacity: 70%;
 }
 
 section#init-profile-container #profile-img {
