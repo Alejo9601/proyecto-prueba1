@@ -1,0 +1,10 @@
+/*<------------------------------------------------------------------>*/
+/*Globals*/
+.flex-container {
+  display: flex;
+}
+
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}

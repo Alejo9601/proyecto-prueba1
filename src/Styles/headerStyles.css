@@ -1,0 +1,71 @@
+/*<------------------------------------------------------------------>*/
+/*Styles apllied to Navbar component*/
+
+#logo-navbar-container {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/*both have a 50% of the total of logo-navbar-container*/
+.navbar,
+section#logo {
+  background-color: transparent;
+  width: 50%;
+  align-items: center; /*vertical center*/
+}
+
+.navbar {
+  justify-content: center;
+}
+
+section#logo {
+  justify-content: flex-start;
+}
+
+.navbar ul {
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+/*responsive logo*/
+section#logo #logo {
+  height: 50px;
+  width: auto;
+  margin-left: 20%;
+}
+
+/*<------------------------------------------------------------------>*/
+/*Styles apllied to Banner component*/
+
+#banner-container {
+  width: calc(100vw);
+  position: relative;
+}
+
+section#init-profile-container {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+section#background-img-container #background-img {
+  height: calc(100vh);
+  width: calc(100vw);
+  opacity: 70%;
+}
+
+section#init-profile-container #profile-img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
