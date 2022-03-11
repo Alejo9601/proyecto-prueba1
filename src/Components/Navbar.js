@@ -9,11 +9,11 @@ const NavBar = () => {
       </section>
       <nav className="navbar flex-container">
         <ul className="flex-container">
-          <li className="navbar-item">HOME</li>
-          <li className="navbar-item">ABOUT</li>
-          <li className="navbar-item">SERVICES</li>
-          <li className="navbar-item">PORTFOLIO</li>
-          <li className="navbar-item">CONTACTO</li>
+          <li className="navbar-item">Home</li>
+          <li className="navbar-item">About</li>
+          <li className="navbar-item">Services</li>
+          <li className="navbar-item">Portfolio</li>
+          <li className="navbar-item">Contact</li>
         </ul>
       </nav>
     </div>

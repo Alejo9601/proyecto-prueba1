@@ -9,20 +9,14 @@
   flex-wrap: wrap;
 }
 
-/*both have a 50% of the total of logo-navbar-container*/
 .navbar,
 section#logo {
-  background-color: transparent;
   align-items: center; /*vertical center*/
-}
-
-.navbar {
   justify-content: center;
 }
 
-section#logo {
-  width: fit-content;
-  justify-content: flex-start;
+.navbar {
+  padding: 0px 50px 0px 50px;
 }
 
 .navbar ul {
@@ -32,15 +26,16 @@ section#logo {
 }
 
 .navbar li {
-  margin: 5px;
-  font-weight: bold;
+  padding: 15px;
+  font-size: 1.7rem;
   color: white;
 }
 
 /*responsive logo*/
 section#logo #logo {
-  height: 50px;
+  height: 70px;
   width: auto;
+  padding: 15px 50px 15px 50px;
 }
 
 /*<------------------------------------------------------------------>*/
@@ -59,14 +54,42 @@ section#logo #logo {
 
 section#init-profile-container {
   position: absolute;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   top: 25%;
-  left: 25%;
-  width: 50%;
+  left: 22.5%;
+  width: 55%;
   height: 50%;
 }
 
 section#init-profile-container #profile-img {
-  height: 50px;
+  height: 250px;
   width: auto;
   border-radius: 50%;
+}
+
+#profile-text-container {
+  text-align: center;
+}
+
+#profile-text-container p,
+h1,
+h2 {
+  color: white;
+  margin: 0px 0px 5px 0px;
+  padding: 0;
+}
+
+#profile-text-container p {
+  font-size: 3rem;
+}
+
+#profile-text-container h1,
+h2 {
+  font-size: 4rem;
+}
+
+#profile-text-container h1 {
+  color: aquamarine;
 }
