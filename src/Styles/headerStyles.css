@@ -1,7 +1,6 @@
 /*<------------------------------------------------------------------>*/
 /*Styles apllied to Navbar component*/
-
-#logo-navbar-container {
+.navbar {
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -9,30 +8,27 @@
   flex-wrap: wrap;
 }
 
-.navbar,
-section#logo {
+.navbar-links,
+.logo {
   align-items: center; /*vertical center*/
   justify-content: center;
 }
 
-.navbar {
+.navbar-links {
+  display: inherit;
+  list-style: none;
+  justify-content: center;
   padding: 0px 50px 0px 50px;
 }
 
-.navbar ul {
-  list-style: none;
-  justify-content: center;
-  padding: 0;
-}
-
-.navbar li {
+.navbar-item {
   padding: 15px;
   font-size: 1.7rem;
   color: white;
 }
 
 /*responsive logo*/
-section#logo #logo {
+.logo img#logo {
   height: 70px;
   width: auto;
   padding: 15px 50px 15px 50px;
@@ -41,7 +37,7 @@ section#logo #logo {
 /*<------------------------------------------------------------------>*/
 /*Styles apllied to Banner component*/
 
-#banner-container {
+.home {
   min-height: 100vh;
   position: relative;
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
@@ -52,7 +48,7 @@ section#logo #logo {
   background-size: cover;
 }
 
-section#init-profile-container {
+.flex-container#profile {
   position: absolute;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -63,7 +59,7 @@ section#init-profile-container {
   height: 50%;
 }
 
-section#init-profile-container #profile-img {
+.flex-container#profile #profile-img {
   height: 250px;
   width: auto;
   border-radius: 50%;

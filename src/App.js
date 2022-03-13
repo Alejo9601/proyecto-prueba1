@@ -1,14 +1,16 @@
 import "./App.css";
 import "./Styles/headerStyles.css";
 import "./Styles/global.css";
-import Banner from "./Components/Banner";
+import Home from "./Components/Home";
 import NavBar from "./Components/Navbar";
+import About from "./Components/About";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
+      <Home />
+      <About />
     </div>
   );
 }
