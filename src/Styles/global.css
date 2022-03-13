@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.grid-container {
+  display: grid;
+}
+
 p,
 li,
 h1,
@@ -13,4 +17,5 @@ h4,
 h5,
 h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
 }

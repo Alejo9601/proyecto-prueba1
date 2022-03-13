@@ -1,5 +1,6 @@
 import "./App.css";
 import "./Styles/headerStyles.css";
+import "./Styles/about.css";
 import "./Styles/global.css";
 import Home from "./Components/Home";
 import NavBar from "./Components/Navbar";

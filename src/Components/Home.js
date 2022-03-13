@@ -4,7 +4,7 @@ import profileImg from "../img/profile2.jpg";
 const Home = () => {
   return (
     <section className="home">
-      <div className="flex-container" id="profile">
+      <div className="flex-container" id="flex-home">
         <div id="profile-img-container">
           <img src={profileImg} id="profile-img" alt="Profile" />
         </div>

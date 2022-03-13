@@ -2,7 +2,7 @@
 /*Styles apllied to Navbar component*/
 .navbar {
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -48,7 +48,7 @@
   background-size: cover;
 }
 
-.flex-container#profile {
+.flex-container#flex-home {
   position: absolute;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -59,7 +59,7 @@
   height: 50%;
 }
 
-.flex-container#profile #profile-img {
+.flex-container#flex-home #profile-img {
   height: 250px;
   width: auto;
   border-radius: 50%;

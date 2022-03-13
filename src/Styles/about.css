@@ -1,0 +1,47 @@
+.about{
+    height: 100vh;
+}
+
+.flex-container#flex-about{
+    flex-wrap: wrap;
+    background-color: white;
+    height: inherit;
+    padding: 0px 80px 0px 80px;
+    align-items: stretch;
+}
+
+.about h1{
+    font-size: 3rem;
+    margin: 0;
+    padding: 50px 80px 50px 80px;
+}
+
+.flex-container#flex-about h2{
+    font-size: 2rem;
+    margin: 0;
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+.about-skills{
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    height: 70%;
+    align-items: center;
+}
+    
+.about-description{
+    width: 50%;
+}
+
+
+.about-description p{
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-weight: lighter;
+    padding-right: 150px;
+}
+
+.skill {
+    padding: 15px;
+}
