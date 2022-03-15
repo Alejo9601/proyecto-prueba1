@@ -4,7 +4,7 @@ import "../Styles/about.css";
 const AboutMe = () => {
   return (
     <section className="flex-container about">
-      <div className="flex-container" id="flex-about">
+      <div id="flex-about">
         <h1>About Me</h1>
         <section className="about-description">
           <h2>I´m Alejandro Juarez - Web developer /</h2>
@@ -18,35 +18,35 @@ const AboutMe = () => {
             modern development workflow with CodeStream in order to increase
             productivity and improve communication inside our development team.
           </p>
+          <div className="flex-container" id="btn-cv-container">
+            <a className="download-btn"> Download CV</a>
+          </div>
         </section>
         <section className="grid-container about-skills">
           <h2>My Skills</h2>
-          <div className="skill" id="html">
-            HTML
+          <div className="flex-container" id="flex-skill-container">
+            <div className="skill" id="html"></div>
+            <p>html</p>
           </div>
-          <div className="skill" id="css">
-            CSS
+          <div className="flex-container" id="flex-skill-container">
+            <div className="skill" id="css"></div>
+            <p>css</p>
           </div>
-          <div className="skill" id="javascript">
-            javascript
+          <div className="flex-container" id="flex-skill-container">
+            <div className="skill" id="javascript"></div>
+            <p>javascript</p>
           </div>
-          <div className="skill" id="react">
-            REACT
+          <div className="flex-container" id="flex-skill-container">
+            <div className="skill" id="react"></div>
+            <p>react.js</p>
           </div>
-          <div className="skill" id="node.js">
-            NODE.JS
+          <div className="flex-container" id="flex-skill-container">
+            <div className="skill" id="node"></div>
+            <p>node.js</p>
           </div>
-          <div className="skill" id="git">
-            GIT
-          </div>
-          <div className="skill" id="react">
-            REACT
-          </div>
-          <div className="skill" id="node.js">
-            NODE.JS
-          </div>
-          <div className="skill" id="git">
-            GIT
+          <div className="flex-container" id="flex-skill-container">
+            <div className="skill" id="git"></div>
+            <p>git</p>
           </div>
         </section>
       </div>

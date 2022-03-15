@@ -1,34 +1,44 @@
 .about {
   background-color: #e2d784;
-  height: 85vh;
   align-items: center;
   justify-content: center;
 }
 
-.flex-container#flex-about {
+#flex-about {
+  display: inherit; /*display flex*/
   flex-flow: row wrap;
   padding: 20px;
+  margin: 50px 0px 50px 0px;
   background-color: white;
-  width: 80%;
-  height: 80%;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 85%;
 }
 
-.flex-container#flex-about,
-h1,
+#flex-about h1,
 .about-description,
 .about-skills {
   margin: 20px;
+  padding: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
-.flex-container#flex-about h1 {
+#flex-about h1,
+#flex-about h2 {
+  color: black;
+}
+
+#flex-about h1 {
   font-size: 3rem;
   background-color: coral;
   flex-basis: 100%;
 }
 
-.flex-container#flex-about h2 {
+#flex-about h2 {
   font-size: 2rem;
 }
 
@@ -36,20 +46,57 @@ h1,
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   background-color: #062c30;
-  flex-basis: 50%;
+  flex-basis: 30%;
 }
 
 .about-description {
   background-color: #05595b;
-  flex-basis: 40%;
+  flex-basis: 30%;
 }
 
 .about-description p {
   font-size: 1.5rem;
   line-height: 30px;
   font-weight: lighter;
+  padding-right: 100px;
+}
+
+#btn-cv-container {
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 10px 10px 10px 0px;
+}
+
+.download-btn {
+  background-color: #00c897;
+  border-radius: 5px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  padding: 10px 10px 10px 10px;
+}
+
+#flex-skill-container {
+  height: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .skill {
   padding: 15px;
+  width: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 70%;
+}
+.flex-skill-container p {
+  flex-basis: 30%;
+}
+
+.skill#react {
+  background-image: url(/src/img/react.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
