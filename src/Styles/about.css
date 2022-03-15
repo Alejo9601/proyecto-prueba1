@@ -1,47 +1,55 @@
-.about{
-    height: 100vh;
+.about {
+  background-color: #e2d784;
+  height: 85vh;
+  align-items: center;
+  justify-content: center;
 }
 
-.flex-container#flex-about{
-    flex-wrap: wrap;
-    background-color: white;
-    height: inherit;
-    padding: 0px 80px 0px 80px;
-    align-items: stretch;
+.flex-container#flex-about {
+  flex-flow: row wrap;
+  padding: 20px;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
-.about h1{
-    font-size: 3rem;
-    margin: 0;
-    padding: 50px 80px 50px 80px;
+.flex-container#flex-about,
+h1,
+.about-description,
+.about-skills {
+  margin: 20px;
 }
 
-.flex-container#flex-about h2{
-    font-size: 2rem;
-    margin: 0;
-    padding-right: 80px;
-    padding-bottom: 20px;
+.flex-container#flex-about h1 {
+  font-size: 3rem;
+  background-color: coral;
+  flex-basis: 100%;
 }
 
-.about-skills{
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 50%;
-    height: 70%;
-    align-items: center;
-}
-    
-.about-description{
-    width: 50%;
+.flex-container#flex-about h2 {
+  font-size: 2rem;
 }
 
+.about-skills {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #062c30;
+  flex-basis: 50%;
+}
 
-.about-description p{
-    font-size: 1.5rem;
-    line-height: 30px;
-    font-weight: lighter;
-    padding-right: 150px;
+.about-description {
+  background-color: #05595b;
+  flex-basis: 40%;
+}
+
+.about-description p {
+  font-size: 1.5rem;
+  line-height: 30px;
+  font-weight: lighter;
 }
 
 .skill {
-    padding: 15px;
+  padding: 15px;
 }

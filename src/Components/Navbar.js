@@ -1,5 +1,6 @@
 import React from "react";
 import appleLogo from "../img/logo.png";
+import "../Styles/headerStyles.css";
 
 const NavBar = () => {
   return (
