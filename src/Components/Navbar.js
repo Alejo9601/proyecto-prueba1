@@ -1,12 +1,12 @@
 import React from "react";
-import appleLogo from "../img/logo.png";
+import logo from "../img/logo.png";
 import "../Styles/headerStyles.css";
 
 const NavBar = () => {
   return (
     <nav className="flex-container navbar">
       <div className="logo">
-        <img src={appleLogo} id="logo" alt="logo" />
+        <img src={logo} id="logo" alt="logo" />
       </div>
       <ul className="navbar-links">
         <li className="navbar-item">Home</li>

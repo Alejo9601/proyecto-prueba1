@@ -44,9 +44,11 @@
 
 .about-skills {
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
+  grid-template-rows: max-content;
   background-color: #062c30;
   flex-basis: 30%;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .about-description {
@@ -77,26 +79,64 @@
   padding: 10px 10px 10px 10px;
 }
 
-#flex-skill-container {
-  height: 100%;
-  flex-flow: row wrap;
+/*-----------------------------------------------------------*/
+/*GRID SKILLS*/
+
+.skill-container {
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
-.skill {
-  padding: 15px;
-  width: auto;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 70%;
-}
-.flex-skill-container p {
-  flex-basis: 30%;
+.skill-img {
+  height: 64px;
+  width: 64px;
 }
 
-.skill#react {
+.skill-img#react {
   background-image: url(/src/img/react.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.skill-img#javascript {
+  background-image: url(/src/img/js.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skill-img#node {
+  background-image: url(/src/img/nodejs.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skill-img#css {
+  background-image: url(/src/img/css-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skill-img#git {
+  background-image: url(/src/img/git.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skill-name {
+  font-size: 2rem;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-title {
+  grid-column: span 3;
 }

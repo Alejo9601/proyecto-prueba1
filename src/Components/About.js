@@ -1,5 +1,11 @@
 import React from "react";
 import "../Styles/about.css";
+import css from "../img/css-3.png";
+import html from "../img/html-5.png";
+import javascript from "../img/js.png";
+import react from "../img/react.png";
+import node from "../img/nodejs.png";
+import git from "../img/git.png";
 
 const AboutMe = () => {
   return (
@@ -23,30 +29,35 @@ const AboutMe = () => {
           </div>
         </section>
         <section className="grid-container about-skills">
-          <h2>My Skills</h2>
-          <div className="flex-container" id="flex-skill-container">
-            <div className="skill" id="html"></div>
-            <p>html</p>
+          <h2 className="grid-title">My Skills</h2>
+          <div className="flex-container skill-container">
+            <img src={html} className="skill-img" id="html" alt="html" />
+            <h3 className="skill-name">html</h3>
           </div>
-          <div className="flex-container" id="flex-skill-container">
-            <div className="skill" id="css"></div>
-            <p>css</p>
+          <div className="flex-container skill-container">
+            <img src={css} className="skill-img" id="css" alt="css" />
+            <h3 className="skill-name">css</h3>
           </div>
-          <div className="flex-container" id="flex-skill-container">
-            <div className="skill" id="javascript"></div>
-            <p>javascript</p>
+          <div className="flex-container skill-container">
+            <img
+              src={javascript}
+              className="skill-img"
+              id="javascript"
+              alt="javascript"
+            />
+            <h3 className="skill-name">javascript</h3>
           </div>
-          <div className="flex-container" id="flex-skill-container">
-            <div className="skill" id="react"></div>
-            <p>react.js</p>
+          <div className="flex-container skill-container">
+            <img src={react} className="skill-img" id="react" alt="react" />
+            <h3 className="skill-name">react</h3>
           </div>
-          <div className="flex-container" id="flex-skill-container">
-            <div className="skill" id="node"></div>
-            <p>node.js</p>
+          <div className="flex-container skill-container">
+            <img src={node} className="skill-img" id="node" alt="node.js" />
+            <h3 className="skill-name">node.js</h3>
           </div>
-          <div className="flex-container" id="flex-skill-container">
-            <div className="skill" id="git"></div>
-            <p>git</p>
+          <div className="flex-container skill-container">
+            <img src={git} className="skill-img" id="git" alt="git" />
+            <h3 className="skill-name">git</h3>
           </div>
         </section>
       </div>
