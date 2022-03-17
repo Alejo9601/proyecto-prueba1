@@ -140,3 +140,35 @@
 .grid-title {
   grid-column: span 3;
 }
+
+/*Media querys*/
+@media (max-width: 850px) {
+  #flex-about {
+    flex-direction: column;
+  }
+
+  .about-skills {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-description p {
+    text-align: justify;
+    padding-right: 0px;
+  }
+
+  #btn-cv-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-skills {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-title {
+    grid-column: span 2;
+  }
+}

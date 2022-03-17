@@ -45,9 +45,6 @@
   flex-direction: column;
 }
 
-.service-name {
-}
-
 #services-detail {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: max-content;
@@ -61,4 +58,17 @@
   font-size: 1.5rem;
   font-weight: 400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Media querys*/
+@media (max-width: 850px) {
+  #services-detail {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  #services-detail {
+    grid-template-columns: 1fr;
+  }
 }

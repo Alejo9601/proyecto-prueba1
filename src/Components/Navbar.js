@@ -1,20 +1,30 @@
-import React from "react";
 import logo from "../img/logo.png";
 import "../Styles/headerStyles.css";
+import React, { useState } from "react";
+import MovileNavbar from "./MovileNavbar";
+import DesktopNavbar from "./DesktopNavbar";
 
-const NavBar = () => {
+const NavBar = (isMovile) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > window.innerHeight) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
-    <nav className="flex-container navbar">
+    <nav
+      className={`flex-container ${isScrolled ? "navbar active" : "navbar"}`}
+    >
       <div className="logo">
         <img src={logo} id="logo" alt="logo" />
       </div>
-      <ul className="navbar-links">
-        <li className="navbar-item">Home</li>
-        <li className="navbar-item">About</li>
-        <li className="navbar-item">Services</li>
-        <li className="navbar-item">Portfolio</li>
-        <li className="navbar-item">Contact</li>
-      </ul>
+      {isMovile ? <MovileNavbar /> : <DesktopNavbar />}
     </nav>
   );
 };

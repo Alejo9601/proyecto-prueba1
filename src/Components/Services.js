@@ -1,4 +1,5 @@
 import React from "react";
+import "../Styles/services.css";
 import design from "../img/graphic-design.png";
 import responsive from "../img/smartphone.png";
 import development from "../img/web-development.png";
