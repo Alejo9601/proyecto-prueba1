@@ -1,6 +1,6 @@
 import React from "react";
 
-const DesktopNavbar = () => {
+const DesktopMenu = () => {
   return (
     <>
       <ul className="navbar-links">
@@ -14,4 +14,4 @@ const DesktopNavbar = () => {
   );
 };
 
-export default DesktopNavbar;
+export default DesktopMenu;

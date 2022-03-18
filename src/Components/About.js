@@ -9,13 +9,15 @@ import git from "../img/git.png";
 
 const AboutMe = () => {
   return (
-    <section className="flex-container about">
-      <div id="flex-about">
-        <h1>About Me</h1>
+    <section className="flex-container content-section">
+      <div className="flex-content" id="about">
+        <h1 className="section-title">About Me</h1>
         <section className="about-description">
-          <h2>I´m Alejandro Juarez - Web developer /</h2>
-          <h2>Software engineer</h2>
-          <p>
+          <h2 className="section-subtitle">
+            I´m Alejandro Juarez - Web developer /
+          </h2>
+          <h2 className="section-subtitle">Software engineer</h2>
+          <p className="section-paragraph" id="about-me">
             I am a Full Stack developer with experience building websites and
             web applications. I specialize in JavaScript, and have professional
             experience working with React. I am always seeking to improve my
@@ -29,35 +31,35 @@ const AboutMe = () => {
           </div>
         </section>
         <section className="grid-container about-skills">
-          <h2 className="grid-title">My Skills</h2>
+          <h2 className="section-subtitle grid-title">My Skills</h2>
           <div className="flex-container skill-container">
-            <img src={html} className="skill-img" id="html" alt="html" />
-            <h3 className="skill-name">html</h3>
+            <img src={html} className="img-64px" id="html" alt="html" />
+            <h3 className="img-description">html</h3>
           </div>
           <div className="flex-container skill-container">
-            <img src={css} className="skill-img" id="css" alt="css" />
-            <h3 className="skill-name">css</h3>
+            <img src={css} className="img-64px" id="css" alt="css" />
+            <h3 className="img-description">css</h3>
           </div>
           <div className="flex-container skill-container">
             <img
               src={javascript}
-              className="skill-img"
+              className="img-64px"
               id="javascript"
               alt="javascript"
             />
-            <h3 className="skill-name">javascript</h3>
+            <h3 className="img-description">javascript</h3>
           </div>
           <div className="flex-container skill-container">
-            <img src={react} className="skill-img" id="react" alt="react" />
-            <h3 className="skill-name">react</h3>
+            <img src={react} className="img-64px" id="react" alt="react" />
+            <h3 className="img-description">react</h3>
           </div>
           <div className="flex-container skill-container">
-            <img src={node} className="skill-img" id="node" alt="node.js" />
-            <h3 className="skill-name">node.js</h3>
+            <img src={node} className="img-64px" id="node" alt="node.js" />
+            <h3 className="img-description">node.js</h3>
           </div>
           <div className="flex-container skill-container">
-            <img src={git} className="skill-img" id="git" alt="git" />
-            <h3 className="skill-name">git</h3>
+            <img src={git} className="img-64px" id="git" alt="git" />
+            <h3 className="img-description">git</h3>
           </div>
         </section>
       </div>

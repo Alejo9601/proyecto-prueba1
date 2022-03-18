@@ -1,14 +1,14 @@
 import logo from "../img/logo.png";
 import "../Styles/headerStyles.css";
 import React, { useState } from "react";
-import MovileNavbar from "./MovileNavbar";
-import DesktopNavbar from "./DesktopNavbar";
+import MobileMenu from "./MobileMenu";
+import DesktopMenu from "./DesktopMenu";
 
 const NavBar = ({ isMobile }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
-    if (window.pageYOffset > window.innerHeight) {
+    if (window.pageYOffset > 93) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -24,7 +24,7 @@ const NavBar = ({ isMobile }) => {
       <div className="logo">
         <img src={logo} id="logo" alt="logo" />
       </div>
-      {isMobile ? <MovileNavbar /> : <DesktopNavbar />}
+      {isMobile ? <MobileMenu /> : <DesktopMenu />}
     </nav>
   );
 };

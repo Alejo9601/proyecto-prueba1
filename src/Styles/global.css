@@ -8,6 +8,60 @@
   display: grid;
 }
 
+.content-section {
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-content {
+  display: flex; /*display flex*/
+  flex-flow: row wrap;
+  padding: 20px;
+  margin: 50px 0px 50px 0px;
+  background-color: white;
+  align-items: stretch;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 85%;
+}
+
+.section-title {
+  font-size: 3rem;
+  flex-basis: 100%;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.section-subtitle {
+  color: black;
+  font-size: 2rem;
+}
+
+.section-paragraph {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-64px {
+  height: 64px;
+  width: 64px;
+}
+
+.img-description {
+  font-size: 2rem;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 p,
 li,
 h1,

@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/headerStyles.css";
 import menuIcon from "../img/menu.png";
 
-const MovileNavbar = () => {
+const MobileMenu = () => {
   return (
     <>
       <div className="flex-container" id="flex-mobile-menu">
@@ -14,4 +14,4 @@ const MovileNavbar = () => {
   );
 };
 
-export default MovileNavbar;
+export default MobileMenu;
