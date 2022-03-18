@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import MovileNavbar from "./MovileNavbar";
 import DesktopNavbar from "./DesktopNavbar";
 
-const NavBar = (isMovile) => {
+const NavBar = ({ isMobile }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -24,7 +24,7 @@ const NavBar = (isMovile) => {
       <div className="logo">
         <img src={logo} id="logo" alt="logo" />
       </div>
-      {isMovile ? <MovileNavbar /> : <DesktopNavbar />}
+      {isMobile ? <MovileNavbar /> : <DesktopNavbar />}
     </nav>
   );
 };

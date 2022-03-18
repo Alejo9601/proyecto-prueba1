@@ -7,15 +7,15 @@ import Services from "./Components/Services";
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [isMovile, setIsMovile] = useState(
+  const [isMobile, setIsMobile] = useState(
     window.innerWidth < 1024 ? true : false
   );
 
   const handleResize = () => {
     if (window.innerWidth < 1024) {
-      setIsMovile(true);
+      setIsMobile(true);
     } else {
-      setIsMovile(false);
+      setIsMobile(false);
     }
   };
 
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar isMovile={isMovile} />
+      <NavBar isMobile={isMobile} />
       <Home />
       <About />
       <Services />

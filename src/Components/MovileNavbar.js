@@ -1,9 +1,15 @@
 import React from "react";
+import "../Styles/headerStyles.css";
+import menuIcon from "../img/menu.png";
 
 const MovileNavbar = () => {
   return (
     <>
-      <h2>Estoy en Movil</h2>
+      <div className="flex-container" id="flex-mobile-menu">
+        <a href="#" className="togle-menu">
+          <img src={menuIcon} alt="togle-menu" />
+        </a>
+      </div>
     </>
   );
 };
