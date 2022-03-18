@@ -1,4 +1,4 @@
-.flex-services,
+.flex-container#services,
 .service-item,
 #services-detail {
   margin: 20px;
@@ -22,6 +22,10 @@
 
 .section-paragraph.description {
   text-align: center;
+}
+
+.service-img:hover {
+  opacity: 50%;
 }
 
 /*Media querys*/

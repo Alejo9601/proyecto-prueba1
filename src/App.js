@@ -5,6 +5,7 @@ import NavBar from "./Components/Navbar";
 import About from "./Components/About";
 import Services from "./Components/Services";
 import React, { useState, useEffect } from "react";
+import Portfolio from "./Components/Portfolio";
 
 function App() {
   const [isMobile, setIsMobile] = useState(
@@ -27,6 +28,7 @@ function App() {
       <Home />
       <About />
       <Services />
+      <Portfolio />
     </div>
   );
 }

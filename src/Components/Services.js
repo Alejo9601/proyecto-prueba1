@@ -10,8 +10,11 @@ import seo from "../img/seo.png";
 const Services = () => {
   return (
     <section className="flex-container content-section">
-      <div className="flex-content" id="flex-services">
+      <div className="flex-content" id="services">
         <h1 className="section-title">Services</h1>
+        <h2 className="section-subtitle-intro">
+          Services i offer to my clients
+        </h2>
         <div className="grid-container" id="services-detail">
           <div className="flex-container service-item" id="responsive">
             <img className="service-img" alt="responsive" src={responsive} />
