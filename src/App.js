@@ -6,6 +6,7 @@ import About from "./Components/About";
 import Services from "./Components/Services";
 import React, { useState, useEffect } from "react";
 import Portfolio from "./Components/Portfolio";
+import Footer from "./Components/Footer";
 
 function App() {
   const [isMobile, setIsMobile] = useState(
@@ -29,6 +30,7 @@ function App() {
       <About />
       <Services />
       <Portfolio />
+      <Footer />
     </div>
   );
 }
