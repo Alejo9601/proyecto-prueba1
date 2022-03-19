@@ -2,8 +2,7 @@
 .service-item,
 #services-detail {
   margin: 20px;
-  padding: 20px;
-  flex-grow: 1;
+  flex-grow: 0;
   flex-shrink: 1;
 }
 
@@ -16,8 +15,7 @@
 #services-detail {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: max-content;
-  background-color: white;
-  flex-basis: 90%;
+  flex-basis: 85%;
 }
 
 .section-paragraph.description {

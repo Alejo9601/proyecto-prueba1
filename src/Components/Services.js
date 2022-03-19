@@ -1,11 +1,11 @@
 import React from "react";
 import "../Styles/services.css";
-import design from "../img/graphic-design.png";
-import responsive from "../img/smartphone.png";
-import development from "../img/web-development.png";
-import social from "../img/social-media.png";
-import performance from "../img/performance.png";
-import seo from "../img/seo.png";
+import design from "../assets/icons/graphic-design.png";
+import responsive from "../assets/icons/smartphone.png";
+import development from "../assets/icons/web-development.png";
+import social from "../assets/icons/social-media.png";
+import performance from "../assets/icons/performance.png";
+import seo from "../assets/icons/seo.png";
 
 const Services = () => {
   return (

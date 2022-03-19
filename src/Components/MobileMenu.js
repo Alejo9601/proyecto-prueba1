@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/headerStyles.css";
-import menuIcon from "../img/menu.png";
+import menuIcon from "../assets/icons/menu.png";
 
 const MobileMenu = () => {
   return (

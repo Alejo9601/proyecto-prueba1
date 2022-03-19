@@ -1,0 +1,15 @@
+.flex-content#contact {
+  justify-content: space-evenly;
+}
+
+.contact-item {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.contact-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}

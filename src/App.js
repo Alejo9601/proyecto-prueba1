@@ -1,12 +1,13 @@
 import "./App.css";
 import "./Styles/global.css";
-import Home from "./Components/Home";
-import NavBar from "./Components/Navbar";
-import About from "./Components/About";
-import Services from "./Components/Services";
-import React, { useState, useEffect } from "react";
-import Portfolio from "./Components/Portfolio";
-import Footer from "./Components/Footer";
+import Home from "./components/Home";
+import NavBar from "./components/Navbar";
+import About from "./components/About";
+import Services from "./components/Services";
+import React, { useState } from "react";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 function App() {
   const [isMobile, setIsMobile] = useState(
@@ -30,6 +31,7 @@ function App() {
       <About />
       <Services />
       <Portfolio />
+      <Contact />
       <Footer />
     </div>
   );

@@ -4,15 +4,15 @@
 }
 
 .portfolio-item#proyect-municipalidad {
-  background-image: url(../img/municipalidad.png);
+  background-image: url(../assets/img/municipalidad.png);
 }
 
 .portfolio-item#proyect-electoral {
-  background-image: url(../img/electoral.jpg);
+  background-image: url(../assets/img/electoral.jpg);
 }
 
 .portfolio-item#proyect-sisconv {
-  background-image: url(../img/sisconv.jpg);
+  background-image: url(../assets/img/sisconv.jpg);
 }
 
 .portfolio-item {
@@ -35,15 +35,17 @@
 }
 
 /*Media querys*/
-@media (max-width: 850px) {
+@media (max-width: 1280px) {
   .grid-container#portfolio-detail {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
   }
 }
 
-@media (max-width: 550px) {
-  #services-detail {
+/*Media querys*/
+@media (max-width: 850px) {
+  .grid-container#portfolio-detail {
     grid-template-columns: 1fr;
+    grid-template-rows: max-content;
   }
 }

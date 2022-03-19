@@ -1,4 +1,4 @@
-import logo from "../img/logo.png";
+import logo from "../assets/icons/logo.png";
 import "../Styles/headerStyles.css";
 import React, { useState } from "react";
 import MobileMenu from "./MobileMenu";

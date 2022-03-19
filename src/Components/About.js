@@ -1,11 +1,12 @@
 import React from "react";
 import "../Styles/about.css";
-import css from "../img/css-3.png";
-import html from "../img/html-5.png";
-import javascript from "../img/js.png";
-import react from "../img/react.png";
-import node from "../img/nodejs.png";
-import git from "../img/git.png";
+import css from "../assets/icons/css-3.png";
+import html from "../assets/icons/html-5.png";
+import javascript from "../assets/icons/js.png";
+import react from "../assets/icons/react.png";
+import node from "../assets/icons/nodejs.png";
+import git from "../assets/icons/git.png";
+import cv from "../assets/cv.pdf";
 
 const AboutMe = () => {
   return (
@@ -27,7 +28,15 @@ const AboutMe = () => {
             productivity and improve communication inside our development team.
           </p>
           <div className="flex-container" id="btn-cv-container">
-            <a className="download-btn"> Download CV</a>
+            <a
+              style={{ textDecoration: "none" }}
+              href={cv}
+              className="download-btn"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Download CV
+            </a>
           </div>
         </section>
         <section className="grid-container about-skills">
