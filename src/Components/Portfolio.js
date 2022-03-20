@@ -1,6 +1,4 @@
-import React from "react";
-import "../Styles/portfolio.css";
-import "../Styles/global.css";
+import "../styles/portfolio.css";
 
 const Portfolio = () => {
   return (

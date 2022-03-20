@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/headerStyles.css";
+import "../styles/headerStyles.css";
 import menuIcon from "../assets/icons/menu.png";
 
 const MobileMenu = () => {
