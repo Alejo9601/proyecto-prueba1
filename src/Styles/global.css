@@ -12,6 +12,7 @@
   background-color: white;
   align-items: center;
   justify-content: center;
+  min-height: 40vh;
 }
 
 .flex-content {
@@ -27,6 +28,7 @@
   flex-basis: 85%;
   /*background-color: #f7f7f7;*/
   border-radius: 15px;
+  animation: onLoad 2s;
 }
 
 .section-title {
@@ -80,4 +82,13 @@ h4,
 h5,
 h6 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes onLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
