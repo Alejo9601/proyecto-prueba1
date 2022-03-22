@@ -9,12 +9,12 @@
 .about-skills {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: max-content;
-  background-color: white;
+  background-color: #f7f7f7;
   flex-basis: 30%;
 }
 
 .about-description {
-  background-color: white;
+  background-color: #f7f7f7;
   flex-basis: 30%;
 }
 

@@ -34,7 +34,8 @@ function App() {
   const [showContact, setShowContact] = useState(false);
 
   const [observer, setElements, entries] = useObserver({
-    rootMargin: "-250px",
+    threshold: 1,
+    root: null,
   });
 
   useEffect(() => {

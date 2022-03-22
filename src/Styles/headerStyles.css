@@ -119,11 +119,40 @@ h2 {
 }
 
 /*Media querys*/
+@media (max-width: 1366px) {
+  .flex-container#flex-home {
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+  }
+}
 
 @media (max-width: 500px) {
   .logo img#logo {
     height: 5rem;
     padding: 3px 30px 3px 30px;
+  }
+
+  .flex-container#flex-home {
+    /*Please change the name of this item*/
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+  }
+
+  #profile-text-container p {
+    font-size: 2.5rem;
+  }
+
+  #profile-text-container h1,
+  h2 {
+    font-size: 4rem;
+  }
+
+  #profile-text-container h1 {
+    color: aquamarine;
   }
 
   #flex-mobile-menu {
