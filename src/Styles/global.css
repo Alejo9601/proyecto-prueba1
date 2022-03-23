@@ -15,6 +15,7 @@
 }
 
 .flex-content {
+  /*this class should have a representative name*/
   display: flex; /*display flex*/
   flex-flow: row wrap;
   padding: 20px;

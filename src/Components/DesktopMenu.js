@@ -1,6 +1,12 @@
 import React from "react";
 
-const DesktopMenu = () => {
+const DesktopMenu = ({
+  activeHome,
+  activeAbout,
+  activeServices,
+  activePortfolio,
+  activeContact,
+}) => {
   return (
     <>
       <ul className="navbar-links">
