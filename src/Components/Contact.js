@@ -16,32 +16,40 @@ const Contact = () => {
         <a
           href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPGFjDGBffFvZLjSNnFgScgtNRFHgRpnfxPCXqGNjBzMPThptSbJtzLSCQpPSXpwStVPzdH"
           target="_blank"
+          rel="noreferrer"
         >
           <img className="img-64px" src={gmail} alt="" />
         </a>
-        <h3 className="img-description  contact-label">Mail me</h3>
+        <h3 className="img-description  contact-label">Mail Me</h3>
       </div>
 
       <div className="flex-container contact-item" id="">
-        <a href="https://github.com/Alejo9601" target="_blank">
+        <a href="https://github.com/Alejo9601" target="_blank" rel="noreferrer">
           <img className="img-64px" src={github} alt="" />
         </a>
-        <h3 className="img-description  contact-label">Follow me</h3>
+        <h3 className="img-description  contact-label">Follow Me</h3>
       </div>
 
       <div className="flex-container contact-item" id="">
-        <img className="img-640px" src={twitter} alt="" />
-        <h3 className="img-description  contact-label">Follow me</h3>
+        <a
+          href="https://twitter.com/AlejandroJ1896"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="img-640px" src={twitter} alt="" />
+        </a>
+        <h3 className="img-description  contact-label">Follow Me</h3>
       </div>
 
       <div className="flex-container contact-item" id="">
         <a
           href="https://www.linkedin.com/in/alejandro-juarez96"
           target="_blank"
+          rel="noreferrer"
         >
           <img className="img-640px" src={linkedin} alt="" />
         </a>
-        <h3 className="img-description contact-label">Contact me</h3>
+        <h3 className="img-description contact-label">Contact Me</h3>
       </div>
     </div>
   );

@@ -70,7 +70,10 @@ function App() {
   /*------------------------------------------------- */
   return (
     <div className="App">
-      <NavBar isMobile={isMobile} />
+      <NavBar
+        isMobile={isMobile}
+        activeSection={{ home: false, about: false, portfolio: false }}
+      />
       <Home />
       <section className="flex-container content-section" id="about">
         {showAbout ? <About /> : null}
