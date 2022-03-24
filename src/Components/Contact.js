@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/contact.css";
+import "../Styles/contact.css";
 import gmail from "../assets/icons/gmail.png";
 import github from "../assets/icons/github.png";
 import twitter from "../assets/icons/twitter.png";

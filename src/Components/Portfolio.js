@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "../styles/portfolio.css";
+import "../Styles/portfolio.css";
 
 const Portfolio = () => {
   const overlay1 = useRef();
