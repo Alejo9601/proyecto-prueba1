@@ -1,19 +1,17 @@
 import { useRef } from "react";
-import "../Styles/portfolio.css";
+import "../styles/portfolio.css";
 
 const Portfolio = () => {
   const overlay1 = useRef();
   const overlay2 = useRef();
   const overlay3 = useRef();
 
-  const activeOverlay = "item-overlay active";
-  const inactiveOverlay = "item-overlay";
+  const activeOverlay = "flex-container item-overlay active";
+  const inactiveOverlay = "flex-container item-overlay";
 
   const proyMouseOver = (event) => {
-    console.log(event.target);
     switch (event.target.id) {
       case "proyect-one":
-        console.log("entre");
         overlay1.current.className = activeOverlay;
         break;
       case "proyect-two":
@@ -40,41 +38,44 @@ const Portfolio = () => {
       </h2>
       <div className="grid-container" id="portfolio-detail">
         <div
-          className="flex-container portfolio-item"
+          className="portfolio-item"
           id="proyect-one"
           onMouseOver={proyMouseOver}
           onMouseLeave={proyMouseLeave}
         >
           <div className={inactiveOverlay} ref={overlay1}>
-            <h3 className="img-description dark-background-label">
-              Proyecto 1
-            </h3>
+            <h3 className="img-description dark-background-text">Proyecto 1</h3>
+            <p className="dark-background-text">
+              Made in 2019 in complexity with
+            </p>
           </div>
         </div>
 
         <div
-          className="flex-container portfolio-item"
+          className="portfolio-item"
           id="proyect-two"
           onMouseOver={proyMouseOver}
           onMouseLeave={proyMouseLeave}
         >
           <div className={inactiveOverlay} ref={overlay2}>
-            <h3 className="img-description dark-background-label">
-              Proyecto 2
-            </h3>
+            <h3 className="img-description dark-background-text">Proyecto 2</h3>
+            <p className="dark-background-text">
+              Made in 2020 in omplexity with
+            </p>
           </div>
         </div>
 
         <div
-          className="flex-container portfolio-item"
+          className="portfolio-item"
           id="proyect-three"
           onMouseOver={proyMouseOver}
           onMouseLeave={proyMouseLeave}
         >
           <div className={inactiveOverlay} ref={overlay3}>
-            <h3 className="img-description dark-background-label">
-              Proyecto 3
-            </h3>
+            <h3 className="img-description dark-background-text">Proyecto 3</h3>
+            <p className="dark-background-text">
+              Made in 2020 in complexity with
+            </p>
           </div>
         </div>
       </div>

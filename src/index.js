@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./Styles/normalize.css";
+import "./styles/normalize.css";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

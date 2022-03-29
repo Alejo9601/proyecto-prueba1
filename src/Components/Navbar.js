@@ -1,5 +1,5 @@
 import logo from "../assets/icons/logo.png";
-import "../Styles/headerStyles.css";
+import "../styles/headerStyles.css";
 import React, { useState, useEffect } from "react";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";

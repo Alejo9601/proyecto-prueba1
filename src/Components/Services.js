@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/services.css";
+import "../styles/services.css";
 import design from "../assets/icons/graphic-design.png";
 import responsive from "../assets/icons/smartphone.png";
 import development from "../assets/icons/web-development.png";
