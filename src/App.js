@@ -47,16 +47,16 @@ function App() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         switch (entry.target.id) {
-          case "about":
+          case "section2":
             setShowAbout(true);
             break;
-          case "services":
+          case "section3":
             setShowServices(true);
             break;
-          case "portfolio":
+          case "section4":
             setShowPortfolio(true);
             break;
-          case "contact":
+          case "section5":
             setShowContact(true);
             break;
           default:
@@ -74,18 +74,20 @@ function App() {
         isMobile={isMobile}
         activeSection={{ home: false, about: false, portfolio: false }}
       />
-      <Home />
-      <section className="flex-container content-section" id="about">
+      <section id="section1">
+        <Home />
+      </section>
+      <section className="flex-container content-section" id="section2">
         {showAbout ? <About /> : null}
       </section>
       {/* <div className="lazy about"></div> */}
-      <section className="flex-container content-section" id="services">
+      <section className="flex-container content-section" id="section3">
         {showServices ? <Services /> : null}
       </section>
-      <section className="flex-container content-section" id="portfolio">
+      <section className="flex-container content-section" id="section4">
         {showPortfolio ? <Portfolio /> : null}
       </section>
-      <section className="flex-container content-section" id="contact">
+      <section className="flex-container content-section" id="section5">
         {showContact ? <Contact /> : null}
       </section>
       <Footer />
