@@ -78,6 +78,48 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
+
+        <div
+          className="portfolio-item"
+          id="proyect-three"
+          onMouseOver={proyMouseOver}
+          onMouseLeave={proyMouseLeave}
+        >
+          <div className={inactiveOverlay} ref={overlay3}>
+            <h3 className="img-description dark-background-text">Proyecto 3</h3>
+            <p className="dark-background-text">
+              Made in 2020 in complexity with
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="portfolio-item"
+          id="proyect-three"
+          onMouseOver={proyMouseOver}
+          onMouseLeave={proyMouseLeave}
+        >
+          <div className={inactiveOverlay} ref={overlay3}>
+            <h3 className="img-description dark-background-text">Proyecto 3</h3>
+            <p className="dark-background-text">
+              Made in 2020 in complexity with
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="portfolio-item"
+          id="proyect-three"
+          onMouseOver={proyMouseOver}
+          onMouseLeave={proyMouseLeave}
+        >
+          <div className={inactiveOverlay} ref={overlay3}>
+            <h3 className="img-description dark-background-text">Proyecto 3</h3>
+            <p className="dark-background-text">
+              Made in 2020 in complexity with
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

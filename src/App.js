@@ -34,7 +34,7 @@ function App() {
   const [showContact, setShowContact] = useState(false);
 
   const [observer, setElements, entries] = useObserver({
-    threshold: 1,
+    threshold: 0.5,
     root: null,
   });
 
