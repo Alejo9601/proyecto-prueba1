@@ -1,6 +1,6 @@
 .service-item,
 #services-detail {
-  margin: 20px;
+  margin: 15px;
   flex-grow: 0;
   flex-shrink: 1;
 }
@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: fit-content;
 }
 
 #services-detail {

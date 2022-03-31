@@ -16,9 +16,6 @@ const DesktopMenu = ({
             activeClass="active-link"
             to="section1"
             smooth={true}
-            spy={true}
-            offset={0}
-            duration={500}
             style={{ cursor: "default" }}
           >
             Home
@@ -27,11 +24,8 @@ const DesktopMenu = ({
         <li className="navbar-item">
           <Link
             activeClass="active-link"
-            to="section2"
+            to="about"
             smooth={true}
-            spy={true}
-            offset={0}
-            duration={500}
             style={{ cursor: "default" }}
           >
             About
@@ -40,11 +34,8 @@ const DesktopMenu = ({
         <li className="navbar-item">
           <Link
             activeClass="active-link"
-            to="section3"
+            to="services"
             smooth={true}
-            spy={true}
-            offset={0}
-            duration={500}
             style={{ cursor: "default" }}
           >
             Services
@@ -53,11 +44,8 @@ const DesktopMenu = ({
         <li className="navbar-item">
           <Link
             activeClass="active-link"
-            to="section4"
+            to="portfolio"
             smooth={true}
-            spy={true}
-            offset={0}
-            duration={500}
             style={{ cursor: "default" }}
           >
             Portfolio
@@ -66,11 +54,8 @@ const DesktopMenu = ({
         <li className="navbar-item">
           <Link
             activeClass="active-link"
-            to="section5"
+            to="footer"
             smooth={true}
-            spy={true}
-            offset={0}
-            duration={500}
             style={{ cursor: "default" }}
           >
             Contact
