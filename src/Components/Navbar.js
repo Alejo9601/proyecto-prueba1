@@ -1,9 +1,8 @@
 import logo from "../assets/icons/logo.png";
 import "../styles/headerStyles.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
-import useObserver from "../hooks/useObserver";
 import useMobileObserver from "../hooks/useMobileObserver";
 
 const NavBar = () => {
