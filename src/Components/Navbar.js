@@ -1,23 +1,13 @@
 import logo from "../assets/icons/logo.png";
 import "../styles/headerStyles.css";
-import React, { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import useMobileObserver from "../hooks/useMobileObserver";
+import useScrollObserver from "../hooks/useScrollObserver";
 
 const NavBar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const isMobile = useMobileObserver();
-
-  const handleScroll = () => {
-    if (window.pageYOffset > 93) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll);
+  const isScrolled = useScrollObserver();
 
   return (
     <nav

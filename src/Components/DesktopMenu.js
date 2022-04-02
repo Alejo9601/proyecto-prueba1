@@ -16,7 +16,7 @@ const DesktopMenu = ({
             activeClass="active-link"
             to="section1"
             smooth={true}
-            style={{ cursor: "default" }}
+            style={{ cursor: "pointer" }}
           >
             Home
           </Link>
@@ -26,7 +26,7 @@ const DesktopMenu = ({
             activeClass="active-link"
             to="about"
             smooth={true}
-            style={{ cursor: "default" }}
+            style={{ cursor: "pointer" }}
           >
             About
           </Link>
@@ -36,7 +36,7 @@ const DesktopMenu = ({
             activeClass="active-link"
             to="services"
             smooth={true}
-            style={{ cursor: "default" }}
+            style={{ cursor: "pointer" }}
           >
             Services
           </Link>
@@ -46,7 +46,7 @@ const DesktopMenu = ({
             activeClass="active-link"
             to="portfolio"
             smooth={true}
-            style={{ cursor: "default" }}
+            style={{ cursor: "pointer" }}
           >
             Portfolio
           </Link>
@@ -56,7 +56,7 @@ const DesktopMenu = ({
             activeClass="active-link"
             to="footer"
             smooth={true}
-            style={{ cursor: "default" }}
+            style={{ cursor: "pointer" }}
           >
             Contact
           </Link>

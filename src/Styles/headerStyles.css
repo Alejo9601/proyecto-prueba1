@@ -49,22 +49,47 @@
   padding: 10px 50px 10px 50px;
 }
 
+/*<------------------------------------------------------------------>*/
+/*Mobile menu*/
 #flex-mobile-menu {
   justify-content: center;
   align-items: center;
   padding: 0px 50px 0px 50px;
 }
 
-.togle-menu {
+.toggle-menu {
   height: fit-content;
   padding: 0;
   margin: 0;
 }
 
-.togle-menu img {
+.toggle-menu img {
   height: 32px;
   width: 32px;
   padding-top: 10px;
+}
+
+.generic-container {
+  position: fixed;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.mobile-nav-links {
+  color: white;
+  font-size: 3rem;
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav-item{
+  padding: 30px;
+  text-align: center;
 }
 
 /*<------------------------------------------------------------------>*/
