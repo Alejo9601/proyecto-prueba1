@@ -17,6 +17,7 @@ const DesktopMenu = ({
             to="section1"
             smooth={true}
             style={{ cursor: "pointer" }}
+            offset={0}
           >
             Home
           </Link>
@@ -27,6 +28,7 @@ const DesktopMenu = ({
             to="about"
             smooth={true}
             style={{ cursor: "pointer" }}
+            offset={-100}
           >
             About
           </Link>
@@ -37,6 +39,7 @@ const DesktopMenu = ({
             to="services"
             smooth={true}
             style={{ cursor: "pointer" }}
+            offset={-100}
           >
             Services
           </Link>
@@ -47,6 +50,7 @@ const DesktopMenu = ({
             to="portfolio"
             smooth={true}
             style={{ cursor: "pointer" }}
+            offset={-100}
           >
             Portfolio
           </Link>
@@ -57,6 +61,7 @@ const DesktopMenu = ({
             to="footer"
             smooth={true}
             style={{ cursor: "pointer" }}
+            offset={-100}
           >
             Contact
           </Link>

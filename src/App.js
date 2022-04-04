@@ -4,11 +4,11 @@ import Home from "./components/Home";
 import NavBar from "./components/Navbar";
 import About from "./components/About";
 import Services from "./components/Services";
-import React, { useEffect } from "react";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import useObserver from "./hooks/useObserver";
+import React, { useEffect } from "react";
 
 function App() {
   const [observer, setElements, entries] = useObserver({

@@ -22,27 +22,52 @@ const MobileMenu = () => {
           >
             <ul className="mobile-nav-links">
               <li className="mobile-nav-item">
-                <Link to="section1" smooth="true" onClick={useToggleMenu}>
+                <Link
+                  to="section1"
+                  smooth="true"
+                  onClick={useToggleMenu}
+                  offset={0}
+                >
                   Home
                 </Link>
               </li>
               <li className="mobile-nav-item">
-                <Link to="section2" smooth="true" onClick={useToggleMenu}>
+                <Link
+                  to="section2"
+                  smooth="true"
+                  onClick={useToggleMenu}
+                  offset={-100}
+                >
                   About
                 </Link>
               </li>
               <li className="mobile-nav-item">
-                <Link to="section3" smooth="true" onClick={useToggleMenu}>
+                <Link
+                  to="section3"
+                  smooth="true"
+                  onClick={useToggleMenu}
+                  offset={-100}
+                >
                   Services
                 </Link>
               </li>
               <li className="mobile-nav-item">
-                <Link to="section4" smooth="true" onClick={useToggleMenu}>
+                <Link
+                  to="section4"
+                  smooth="true"
+                  onClick={useToggleMenu}
+                  offset={-100}
+                >
                   Portfolio
                 </Link>
               </li>
               <li className="mobile-nav-item">
-                <Link to="section5" smooth="true" onClick={useToggleMenu}>
+                <Link
+                  to="section5"
+                  smooth="true"
+                  onClick={useToggleMenu}
+                  offset={-100}
+                >
                   Contact
                 </Link>
               </li>
