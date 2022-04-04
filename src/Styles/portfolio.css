@@ -3,45 +3,64 @@
   grid-template-rows: max-content;
 }
 
-.portfolio-item#proyect-one {
-  background-image: url(../assets/img/municipalidad.png);
-}
-
-.portfolio-item#proyect-two {
-  background-image: url(../assets/img/electoral.jpg);
-}
-
-.portfolio-item#proyect-three {
-  background-image: url(../assets/img/sisconv.jpg);
-}
-
-.portfolio-item {
+.portfolio-item{
   width: 350px;
   height: 200px;
   margin: 15px;
-  background-repeat: no-repeat;
-  background-position: center;
   box-shadow: 0px 0px 0px 0.5px gray;
   border-radius: 5px;
-  transition: background 3s;
+  overflow: hidden;
 }
 
-.portfolio-item:hover {
-  background-size: 150%;
+.image-container {
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.image-container:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */ 
+  transform: scale(1.2);
+}
+
+.image-container#proyect-one {
+  background-image: url(../assets/img/municipalidad.png);
+}
+
+.image-container#proyect-two {
+  background-image: url(../assets/img/electoral.jpg);
+}
+
+.image-container#proyect-three {
+  background-image: url(../assets/img/sisconv.jpg);
 }
 
 .item-overlay {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left:0;
   visibility: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
   border-radius: inherit;
-  transition: background-color 1s;
+  transition: height 0.5s ease;
 }
 
 .item-overlay.active {
+  height: 100%;
   visibility: visible;
   background-color: rgba(5, 7, 12, 0.8);
 }
