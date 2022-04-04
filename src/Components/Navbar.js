@@ -1,5 +1,5 @@
 import logo from "../assets/icons/logo.png";
-import "../styles/headerStyles.css";
+import "../styles/navbar.css";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import useMobileObserver from "../hooks/useMobileObserver";

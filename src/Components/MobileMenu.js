@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../styles/headerStyles.css";
 import menuIcon from "../assets/icons/menu.png";
 import { Link } from "react-scroll";
 
