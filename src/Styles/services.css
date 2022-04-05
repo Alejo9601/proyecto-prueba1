@@ -18,6 +18,15 @@
   flex-basis: 85%;
 }
 
+.service-name {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.service-img {
+  padding: 10px;
+}
+
 .section-paragraph.description {
   text-align: center;
 }
