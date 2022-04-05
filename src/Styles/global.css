@@ -1,4 +1,18 @@
 /*<------------------------------------------------------------------>*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
 /*Globals*/
 .flex-container {
   display: flex;
@@ -68,6 +82,7 @@
 .section-paragraph {
   font-size: 1.5rem;
   font-weight: 500;
+  padding: 10px;
 }
 
 .img-64px {
@@ -77,9 +92,15 @@
 
 .img-description {
   font-size: 2rem;
-  margin-top: 10px;
+  padding: 10px;
   text-align: center;
   font-weight: 400;
+}
+
+.refButton {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
 }
 
 p,
@@ -89,7 +110,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, 
+.refButton{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 

@@ -6,9 +6,10 @@ const Home = () => {
   return (
     <section className="home">
       <div className="flex-container" id="flex-home">
-        <div id="profile-img-container">
-          <img src={profileImg} id="profile-img" alt="Profile" />
-        </div>
+        <picture className="image-container">
+          <source type="image/png" srcSet={profileImg} />
+          <img className="profile-image" alt="ProfileImage" />
+        </picture>
         <div id="profile-text-container">
           <h2> Hi!</h2>
           <h1>I'm Alejandro Juarez</h1>

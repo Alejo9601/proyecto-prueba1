@@ -7,6 +7,7 @@ import react from "../assets/icons/react.png";
 import node from "../assets/icons/nodejs.png";
 import git from "../assets/icons/git.png";
 import cv from "../assets/cv.pdf";
+import RefButton from "./RefButton";
 
 const AboutMe = ({ observer, entries }) => {
   const [show, setShow] = useState(false);
@@ -40,7 +41,12 @@ const AboutMe = ({ observer, entries }) => {
               order to increase productivity and improve communication inside
               our development team.
             </p>
-            <div className="flex-container" id="btn-cv-container">
+            <RefButton
+              className="cv-download"
+              reference={cv}
+              btnText="Download CV"
+            />
+            {/* <div className="flex-container" id="btn-cv-container">
               <a
                 style={{ textDecoration: "none" }}
                 href={cv}
@@ -50,7 +56,7 @@ const AboutMe = ({ observer, entries }) => {
               >
                 Download CV
               </a>
-            </div>
+            </div> */}
           </section>
           <section className="grid-container about-skills">
             <h2 className="section-subtitle grid-title">My Skills</h2>

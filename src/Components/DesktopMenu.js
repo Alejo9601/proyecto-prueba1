@@ -1,13 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const DesktopMenu = ({
-  activeHome,
-  activeAbout,
-  activeServices,
-  activePortfolio,
-  activeContact,
-}) => {
+const DesktopMenu = () => {
   return (
     <>
       <ul className="navbar-links">

@@ -23,7 +23,7 @@
     animation: onLoad 2s;
   }
   
-  .flex-container#flex-home #profile-img {
+  .profile-image {
     height: 27rem;
     width: auto;
     border-radius: 50%;
@@ -53,7 +53,7 @@
   }
   
   #profile-text-container h1 {
-    color: aquamarine;
+    color: #00c897;
   }
   
   /*Media querys*/

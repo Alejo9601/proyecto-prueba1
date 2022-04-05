@@ -1,6 +1,9 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import "../styles/portfolio.css";
 import PortfolioCard from "./PortfolioCard";
+import municipalidad from "../assets/img/municipalidad.png";
+import sisConv from "../assets/img/sisconv.jpg";
+import sisElectoral from "../assets/img/electoral.jpg";
 
 const Portfolio = ({ observer, entries }) => {
   const [show, setShow] = useState(false);
@@ -27,31 +30,37 @@ const Portfolio = ({ observer, entries }) => {
               proyId="proyect-one"
               proyName="Municipio 28 de Noviembre"
               usedTechs="Html - css - JavaScript"
+              proyImg={municipalidad}
             />
             <PortfolioCard
               proyId="proyect-two"
               proyName="Sistema Electoral"
               usedTechs="Html - css - JavaScript"
+              proyImg={sisConv}
             />
             <PortfolioCard
               proyId="proyect-three"
               proyName="Sis-CONV"
               usedTechs="Html - css - JavaScript"
+              proyImg={sisElectoral}
             />
             <PortfolioCard
               proyId="proyect-one"
               proyName="Municipio 28 de Noviembre"
               usedTechs="Html - css - JavaScript"
+              proyImg={municipalidad}
             />
             <PortfolioCard
               proyId="proyect-one"
               proyName="Municipio 28 de Noviembre"
               usedTechs="Html - css - JavaScript"
+              proyImg={municipalidad}
             />
             <PortfolioCard
               proyId="proyect-one"
               proyName="Municipio 28 de Noviembre"
               usedTechs="Html - css - JavaScript"
+              proyImg={municipalidad}
             />
           </div>
         </div>
