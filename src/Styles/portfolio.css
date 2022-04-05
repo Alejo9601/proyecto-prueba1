@@ -35,7 +35,6 @@
 
 .item-overlay {
   position: absolute;
-  z-index: 1;
   height: 0;
   width: 100%;
   bottom: 0;
