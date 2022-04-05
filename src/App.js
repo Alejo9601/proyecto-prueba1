@@ -12,7 +12,7 @@ import React, { useEffect } from "react";
 
 function App() {
   const [observer, setElements, entries] = useObserver({
-    threshold: 1,
+    threshold: 0.3,
     root: null,
   });
 

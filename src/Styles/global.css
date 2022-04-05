@@ -25,7 +25,6 @@ body {
 .content-section {
   align-items: center;
   justify-content: center;
-  min-height: 200px;
 }
 
 .content-section#section2 {
@@ -48,11 +47,12 @@ body {
   flex-shrink: 1;
   flex-basis: 85%;
   border-radius: 15px;
-  animation: onLoad 2s;
   background-color: #f7f7f7;
   box-shadow: 0px 0px 4px gray;
   max-width: 1366px;
 }
+
+
 
 .section-title {
   font-size: 3rem;
@@ -113,13 +113,4 @@ h5,
 h6, 
 .refButton{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-@keyframes onLoad {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
