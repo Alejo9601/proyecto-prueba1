@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/portfolio.css";
-import PortfolioCard from "./PortfolioCard";
+import PortfolioCard from "../components/PortfolioCard";
 import municipalidad from "../assets/img/municipalidad.png";
 import sisConv from "../assets/img/sisconv.jpg";
 import sisElectoral from "../assets/img/electoral.jpg";

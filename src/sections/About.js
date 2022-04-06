@@ -7,7 +7,7 @@ import react from "../assets/icons/react.png";
 import node from "../assets/icons/nodejs.png";
 import git from "../assets/icons/git.png";
 import cv from "../assets/cv.pdf";
-import RefButton from "./RefButton";
+import RefButton from "../components/RefButton";
 
 const AboutMe = ({ observer, entries }) => {
   const [show, setShow] = useState(false);

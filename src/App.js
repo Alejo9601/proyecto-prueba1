@@ -1,12 +1,13 @@
 import "./App.css";
 import "./styles/global.css";
-import Home from "./components/Home";
+import Home from "./sections/Home";
+import About from "./sections/About";
+import Services from "./sections/Services";
+import Portfolio from "./sections/Portfolio";
+import Contact from "./sections/Contact";
 import Header from "./components/Header";
-import About from "./components/About";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+
 import useObserver from "./hooks/useObserver";
 import React, { useEffect } from "react";
 
