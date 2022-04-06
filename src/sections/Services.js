@@ -12,7 +12,7 @@ const Services = ({ observer, entries }) => {
 
   useEffect(() => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.target.id === "section2") {
+      if (entry.isIntersecting && entry.target.id === "section3") {
         flexContent.current.style.opacity = 1;
         flexContent.current.style.visibility = "visible";
       }

@@ -10,7 +10,7 @@ const Portfolio = ({ observer, entries }) => {
 
   useEffect(() => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.target.id === "section3") {
+      if (entry.isIntersecting && entry.target.id === "section4") {
         flexContent.current.style.opacity = 1;
         flexContent.current.style.visibility = "visible";
       }
