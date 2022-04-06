@@ -13,6 +13,17 @@ body {
   max-width: 100%;
 }
 
+:root {
+  --white: #ffffff;
+  --grey: #414141;
+  --red: #d62d20;
+  --amarillo: #ffa700;
+  --blue: #3367d6;
+  --orange: #e34c26;
+  --green: #008744;
+  --blueReact: #61DBFB;
+}
+
 /*Globals*/
 .flex-container {
   display: flex;
@@ -47,18 +58,24 @@ body {
   flex-shrink: 1;
   flex-basis: 85%;
   border-radius: 15px;
-  background-color: #f7f7f7;
-  box-shadow: 0px 0px 4px gray;
-  max-width: 1366px;
+  background-color: white;
+  /* box-shadow: 0px 0px 4px gray; */
+  max-width: 1280px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 2s;
 }
 
+.section-title,
+.section-subtitle,
+.section-subtitle-intro,
+.section-paragraph {
+  color: var(--grey);
+}
+
 .section-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   flex-basis: 100%;
-  color: black;
   margin: 20px 20px 10px 20px;
   padding: 20px;
   flex-grow: 1;
@@ -66,14 +83,13 @@ body {
 }
 
 .section-subtitle {
-  color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 40px;
 }
 
 .section-subtitle-intro {
   font-weight: bolder;
-  font-size: 1.6rem;
-  color: black;
+  font-size: 1.8rem;
   text-align: left;
   width: 100%;
   padding: 0px 20px 20px 20px;
@@ -81,7 +97,7 @@ body {
 }
 
 .section-paragraph {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   padding: 10px;
 }
@@ -113,5 +129,5 @@ h4,
 h5,
 h6, 
 .refButton{
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;;
 }
