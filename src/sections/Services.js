@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/services.css";
 import design from "../assets/icons/graphic-design.png";
 import responsive from "../assets/icons/smartphone.png";
@@ -8,23 +8,20 @@ import performance from "../assets/icons/performance.png";
 import seo from "../assets/icons/seo.png";
 
 const Services = ({ observer, entries }) => {
-  const [show, setShow] = useState(false);
+  const flexContent = useRef();
 
   useEffect(() => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.target.id === "section3") {
-        setShow(true);
-        observer.unobserve(entry.target);
+      if (entry.isIntersecting && entry.target.id === "section2") {
+        flexContent.current.style.opacity = 1;
+        flexContent.current.style.visibility = "visible";
       }
     });
   }, [entries, observer]);
 
   return (
     <>
-      <div
-        className="flex-content services"
-        style={show ? { visibility: "visible" } : { visibility: "hidden" }}
-      >
+      <div className="flex-content services" ref={flexContent}>
         <h1 className="section-title">Services</h1>
         <h2 className="section-subtitle-intro">
           Services i offer to my clients

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/about.css";
 import css from "../assets/icons/css-3.png";
 import html from "../assets/icons/html-5.png";

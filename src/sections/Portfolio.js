@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/portfolio.css";
 import PortfolioCard from "../components/PortfolioCard";
 import municipalidad from "../assets/img/municipalidad.png";

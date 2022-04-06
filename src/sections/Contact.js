@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/contact.css";
 import gmail from "../assets/icons/gmail.png";
 import github from "../assets/icons/github.png";
