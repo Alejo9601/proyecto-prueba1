@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/contact.css";
 import gmail from "../assets/icons/gmail.png";
 import github from "../assets/icons/github.png";
@@ -6,23 +6,20 @@ import twitter from "../assets/icons/twitter.png";
 import linkedin from "../assets/icons/linkedin.png";
 
 const Contact = ({ observer, entries }) => {
-  const [show, setShow] = useState(false);
+  const flexContent = useRef();
 
   useEffect(() => {
     entries.forEach((entry) => {
       if (entry.isIntersecting && entry.target.id === "section5") {
-        setShow(true);
-        observer.unobserve(entry.target);
+        flexContent.current.style.opacity = 1;
+        flexContent.current.style.visibility = "visible";
       }
     });
   }, [entries, observer]);
 
   return (
     <>
-      <div
-        className="flex-content contact"
-        style={show ? { visibility: "visible" } : { visibility: "hidden" }}
-      >
+      <div className="flex-content contact" ref={flexContent}>
         <h1 className="section-title">Contact</h1>
         <h2 className="section-subtitle-intro">
           Contact me if you want us to work together
