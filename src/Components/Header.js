@@ -5,20 +5,22 @@ import DesktopMenu from "./DesktopMenu";
 import useMobileObserver from "../hooks/useMobileObserver";
 import useScrollObserver from "../hooks/useScrollObserver";
 
-const NavBar = () => {
+const Header = () => {
   const isMobile = useMobileObserver();
   const isScrolled = useScrollObserver();
 
   return (
-    <nav
-      className={`flex-container ${isScrolled ? "navbar active" : "navbar"}`}
-    >
-      <div className="logo">
-        <img src={logo} id="logo" alt="logo" />
-      </div>
-      {isMobile ? <MobileMenu /> : <DesktopMenu />}
-    </nav>
+    <header>
+      <nav
+        className={`flex-container ${isScrolled ? "navbar active" : "navbar"}`}
+      >
+        <div className="logo">
+          <img src={logo} id="logo" alt="logo" />
+        </div>
+        {isMobile ? <MobileMenu /> : <DesktopMenu />}
+      </nav>
+    </header>
   );
 };
 
-export default NavBar;
+export default Header;

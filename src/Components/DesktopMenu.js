@@ -1,10 +1,10 @@
 import React from "react";
-import NavLinks from "./NavLinks";
+import Navigation from "./Navigation";
 
 const DesktopMenu = () => {
   return (
     <>
-      <NavLinks isMobile={false} />
+      <Navigation isMobile={false} />
     </>
   );
 };

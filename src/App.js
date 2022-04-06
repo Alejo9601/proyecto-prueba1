@@ -1,7 +1,7 @@
 import "./App.css";
 import "./styles/global.css";
 import Home from "./components/Home";
-import NavBar from "./components/Navbar";
+import Header from "./components/Header";
 import About from "./components/About";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
@@ -24,7 +24,7 @@ function App() {
   /*------------------------------------------------- */
   return (
     <div className="App">
-      <NavBar />
+      <Header />
       <section id="section1">
         <Home observer={observer} entries={entries} />
       </section>

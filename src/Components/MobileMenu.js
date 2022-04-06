@@ -1,6 +1,6 @@
 import { useState } from "react";
 import menuIcon from "../assets/icons/menu.png";
-import NavLinks from "./NavLinks";
+import Navigation from "./Navigation";
 
 const MobileMenu = () => {
   const [showNav, setShowNav] = useState(false);
@@ -20,7 +20,7 @@ const MobileMenu = () => {
             className="flex-container generic-container"
             onClick={useToggleMenu}
           >
-            <NavLinks useToggleMenu={useToggleMenu} isMobile={true} />
+            <Navigation useToggleMenu={useToggleMenu} isMobile={true} />
           </div>
         ) : null}
       </div>
