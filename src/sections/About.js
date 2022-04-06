@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/about.css";
 import css from "../assets/icons/css-3.png";
 import html from "../assets/icons/html-5.png";
@@ -10,23 +10,20 @@ import cv from "../assets/cv.pdf";
 import RefButton from "../components/RefButton";
 
 const AboutMe = ({ observer, entries }) => {
-  const [show, setShow] = useState(false);
+  const flexContent = useRef();
 
   useEffect(() => {
     entries.forEach((entry) => {
       if (entry.isIntersecting && entry.target.id === "section2") {
-        setShow(true);
-        observer.unobserve(entry.target);
+        flexContent.current.style.opacity = 1;
+        flexContent.current.style.visibility = "visible";
       }
     });
   }, [entries, observer]);
 
   return (
     <>
-      <div
-        className="flex-content about"
-        style={show ? { visibility: "visible" } : { visibility: "hidden" }}
-      >
+      <div className="flex-content about" ref={flexContent}>
         <h1 className="section-title">About Me</h1>
         <section className="about-description">
           <h2 className="section-subtitle">
@@ -47,17 +44,6 @@ const AboutMe = ({ observer, entries }) => {
             reference={cv}
             btnText="Download CV"
           />
-          {/* <div className="flex-container" id="btn-cv-container">
-              <a
-                style={{ textDecoration: "none" }}
-                href={cv}
-                className="download-btn"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Download CV
-              </a>
-            </div> */}
         </section>
         <section className="grid-container about-skills">
           <h2 className="section-subtitle grid-title">My Skills</h2>
