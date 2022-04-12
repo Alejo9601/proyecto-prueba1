@@ -17,8 +17,8 @@
     justify-content: center;
     align-items: center;
     top: 25%;
-    left: 22.5%;
-    width: 55%;
+    left: 10%;
+    width: 80%;
     height: 50%;
     animation: onLoad 2s;
   }
@@ -57,15 +57,6 @@
   }
   
   /*Media querys*/
-  @media (max-width: 1366px) {
-    .flex-container#flex-home {
-      top: 25%;
-      left: 10%;
-      width: 80%;
-      height: 50%;
-    }
-  }
-  
   @media (max-width: 500px) {
     .flex-container#flex-home {
       /*Please change the name of this item*/
