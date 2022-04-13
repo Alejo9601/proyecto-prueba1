@@ -14,7 +14,7 @@ const NavigationLink = ({ isMobile, refTo, textValue }) => {
   return (
     <>
       <li className={isMobile ? mobileClasses.navItem : desktopClasses.navItem}>
-        <Link className={"link"} to={refTo} smooth="true" offset={-100}>
+        <Link className={"link"} to={refTo} smooth="true" offset={-50}>
           {textValue}
         </Link>
       </li>
