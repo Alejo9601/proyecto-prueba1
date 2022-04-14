@@ -39,6 +39,10 @@
   cursor: pointer;
 }
 
+.link.active {
+  color: var(--green);
+}
+
 /*responsive logo*/
 .logo img#logo {
   height: 6.3rem;

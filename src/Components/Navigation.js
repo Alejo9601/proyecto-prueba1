@@ -1,10 +1,6 @@
 import NavigationLink from "./NavigationLink";
-import { useContext, useState } from "react";
-import ObserverContext from "../context/ObserverContext";
 
 const Navegation = ({ useToggleMenu, isMobile }) => {
-  const [observer, setElements, entries] = useContext(ObserverContext);
-
   const mobileClasses = {
     navLink: "mobile-nav-links",
     navItem: "mobile-nav-item",

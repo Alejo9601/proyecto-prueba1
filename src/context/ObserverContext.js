@@ -5,7 +5,7 @@ const ObserverContext = createContext();
 
 const ObserverProvider = ({ children }) => {
   const data = useObserver({
-    threshold: 0.3,
+    threshold: 0.7,
     root: null,
   });
 
