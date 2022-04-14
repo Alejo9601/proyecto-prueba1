@@ -1,12 +1,14 @@
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import "../styles/contact.css";
 import gmail from "../assets/icons/gmail.png";
 import github from "../assets/icons/github.png";
 import twitter from "../assets/icons/twitter.png";
 import linkedin from "../assets/icons/linkedin.png";
+import ObserverContext from "../context/ObserverContext";
 
-const Contact = ({ observer, entries }) => {
+const Contact = () => {
   const flexContent = useRef();
+  const [observer, setElements, entries] = useContext(ObserverContext);
 
   useEffect(() => {
     entries.forEach((entry) => {

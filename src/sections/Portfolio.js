@@ -1,12 +1,14 @@
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import "../styles/portfolio.css";
 import PortfolioCard from "../components/PortfolioCard";
 import municipalidad from "../assets/img/municipalidad.png";
 import sisConv from "../assets/img/sisconv.jpg";
 import sisElectoral from "../assets/img/electoral.jpg";
+import ObserverContext from "../context/ObserverContext";
 
-const Portfolio = ({ observer, entries }) => {
+const Portfolio = () => {
   const flexContent = useRef();
+  const [observer, setElements, entries] = useContext(ObserverContext);
 
   useEffect(() => {
     entries.forEach((entry) => {

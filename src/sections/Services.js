@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import "../styles/services.css";
 import design from "../assets/icons/graphic-design.png";
 import responsive from "../assets/icons/smartphone.png";
@@ -6,9 +6,11 @@ import development from "../assets/icons/web-development.png";
 import social from "../assets/icons/social-media.png";
 import performance from "../assets/icons/performance.png";
 import seo from "../assets/icons/seo.png";
+import ObserverContext from "../context/ObserverContext";
 
-const Services = ({ observer, entries }) => {
+const Services = () => {
   const flexContent = useRef();
+  const [observer, setElements, entries] = useContext(ObserverContext);
 
   useEffect(() => {
     entries.forEach((entry) => {

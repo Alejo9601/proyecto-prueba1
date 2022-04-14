@@ -9,7 +9,6 @@ export default function useObserver(options) {
   /*Unique instance of observer, usingRef to prevent loops*/
   const observer = useRef(
     new IntersectionObserver(function (observedEntries) {
-      console.log(observedEntries);
       setEntries(observedEntries);
     }, options)
   );

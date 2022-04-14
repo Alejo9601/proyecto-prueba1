@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import "../styles/about.css";
 import css from "../assets/icons/css-3.png";
 import html from "../assets/icons/html-5.png";
@@ -8,9 +8,11 @@ import node from "../assets/icons/nodejs.png";
 import git from "../assets/icons/git.png";
 import cv from "../assets/cv.pdf";
 import RefButton from "../components/RefButton";
+import ObserverContext from "../context/ObserverContext";
 
-const AboutMe = ({ observer, entries }) => {
+const AboutMe = () => {
   const flexContent = useRef();
+  const [observer, setElements, entries] = useContext(ObserverContext);
 
   useEffect(() => {
     entries.forEach((entry) => {
