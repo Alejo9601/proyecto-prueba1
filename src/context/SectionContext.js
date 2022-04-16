@@ -15,13 +15,15 @@ const CurrentSectionProvider = ({ children }) => {
 
   useEffect(() => {
     const sections = document.querySelectorAll(".flex-content");
-    setElements(sections);
+    const home = document.querySelectorAll(".home");
+    setElements(Array.from(sections).concat(Array.from(home)));
   }, [setElements]);
 
   useEffect(() => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setActiveSection(entry.target.classList[1]);
+        const home = entry.target.classList[0];
+        setActiveSection(home === "home" ? home : entry.target.classList[1]);
       }
     });
   }, [entries, observer]);

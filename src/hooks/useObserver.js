@@ -10,7 +10,6 @@ export default function useObserver(options) {
   const observer = useRef(
     new IntersectionObserver(function (observedEntries) {
       setEntries(observedEntries);
-      console.log(observer.current.IntersectionObserverEntry);
     }, options)
   );
 
@@ -31,6 +30,8 @@ export default function useObserver(options) {
       }
     };
   }, [elements]);
+
+  /**console.log(elements);**/
 
   /*We return the unique intance of observer
     We return the setElements function, wich will introduce new elements to be heard
