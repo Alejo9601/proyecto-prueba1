@@ -1,13 +1,15 @@
 import { createContext, useEffect, useState } from "react";
+import useMobileObserver from "../hooks/useMobileObserver";
 import useObserver from "../hooks/useObserver";
 
 const SectionContext = createContext();
 
 const CurrentSectionProvider = ({ children }) => {
+  const isMobile = useMobileObserver();
   const [activeSection, setActiveSection] = useState("home");
 
   const [observer, setElements, entries] = useObserver({
-    threshold: 0.55,
+    threshold: isMobile ? 0.2 : 0.55,
     root: null,
   });
 
