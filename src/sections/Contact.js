@@ -4,20 +4,18 @@ import gmail from "../assets/icons/gmail.png";
 import github from "../assets/icons/github.png";
 import twitter from "../assets/icons/twitter.png";
 import linkedin from "../assets/icons/linkedin.png";
-import ObserverContext from "../context/ObserverContext";
+import SectionContext from "../context/SectionContext";
 
 const Contact = () => {
   const flexContent = useRef();
-  const [observer, setElements, entries] = useContext(ObserverContext);
+  const activeSection = useContext(SectionContext);
 
   useEffect(() => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.target.id === "section5") {
-        flexContent.current.style.opacity = 1;
-        flexContent.current.style.visibility = "visible";
-      }
-    });
-  }, [entries, observer]);
+    if (activeSection === "contact") {
+      flexContent.current.style.opacity = 1;
+      flexContent.current.style.visibility = "visible";
+    }
+  }, [activeSection]);
 
   return (
     <>

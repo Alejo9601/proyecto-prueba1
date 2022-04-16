@@ -14,25 +14,21 @@ const Navegation = ({ useToggleMenu, isMobile }) => {
   return (
     <>
       <ul className={isMobile ? mobileClasses.navLink : desktopClasses.navLink}>
-        <NavigationLink isMobile={isMobile} refTo="section1" textValue="Home" />
+        <NavigationLink isMobile={isMobile} refTo="home" textValue="Home" />
+        <NavigationLink isMobile={isMobile} refTo="about" textValue="About" />
         <NavigationLink
           isMobile={isMobile}
-          refTo="section2"
-          textValue="About"
-        />
-        <NavigationLink
-          isMobile={isMobile}
-          refTo="section3"
+          refTo="services"
           textValue="Services"
         />
         <NavigationLink
           isMobile={isMobile}
-          refTo="section4"
+          refTo="portfolio"
           textValue="Portfolio"
         />
         <NavigationLink
           isMobile={isMobile}
-          refTo="section5"
+          refTo="contact"
           textValue="Contact"
         />
       </ul>

@@ -6,7 +6,6 @@ const isMobileScreen = () => {
 
 const useMobileObserver = () => {
   const [isMobile, setIsMobile] = useState(isMobileScreen);
-  console.log(isMobile);
   useEffect(() => {
     const handleResize = () => {
       isMobileScreen() ? setIsMobile(true) : setIsMobile(false);

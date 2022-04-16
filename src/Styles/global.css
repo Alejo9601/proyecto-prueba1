@@ -1,5 +1,5 @@
 /*<------------------------------------------------------------------>*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ body {
   --blue: #3367d6;
   --orange: #e34c26;
   --green: #00c897;
-  --blueReact: #61DBFB;
+  --blueReact: #61dbfb;
 }
 
 /*Globals*/
@@ -63,7 +63,7 @@ body {
   max-width: 1280px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1s;
+  transition: opacity 2s;
 }
 
 .section-title,
@@ -127,7 +127,7 @@ h2,
 h3,
 h4,
 h5,
-h6, 
-.refButton{
-  font-family: "Roboto", sans-serif;;
+h6,
+.refButton {
+  font-family: "Roboto", sans-serif;
 }

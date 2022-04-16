@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-scroll";
-import ObserverContext from "../context/ObserverContext";
+import SectionContext from "../context/SectionContext";
 
 const NavigationLink = ({ isMobile, refTo, textValue }) => {
   const mobileClasses = {
@@ -13,24 +13,13 @@ const NavigationLink = ({ isMobile, refTo, textValue }) => {
     navItem: "desktop-nav-item",
   };
 
-  const [observer, setElements, entries] = useContext(ObserverContext);
-  const [activeSection, setActiveSection] = useState(false);
-
-  useEffect(() => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.target.id === refTo) {
-        setActiveSection(true);
-      } else {
-        setActiveSection(false);
-      }
-    });
-  }, [entries, observer]);
+  const activeSection = useContext(SectionContext);
 
   return (
     <>
       <li className={isMobile ? mobileClasses.navItem : desktopClasses.navItem}>
         <Link
-          className={activeSection ? "link active" : "link"}
+          className={activeSection === refTo ? "link active" : "link"}
           to={refTo}
           smooth="true"
           offset={-50}

@@ -7,36 +7,30 @@ import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import React, { useContext, useEffect } from "react";
-import ObserverContext from "./context/ObserverContext";
+import { CurrSectionProv } from "./context/SectionContext";
 
 function App() {
-  const [observer, setElements, entries] = useContext(ObserverContext);
-
-  useEffect(() => {
-    const sections = document.querySelectorAll(".content-section");
-    setElements(sections);
-  }, [setElements]);
-
   return (
     <div className="App">
-      <Header />
-      <section id="section1">
-        <Home />
-      </section>
-      <section className="flex-container content-section" id="section2">
-        <About />
-      </section>
-      <section className="flex-container content-section" id="section3">
-        <Services />
-      </section>
-      <section className="flex-container content-section" id="section4">
-        <Portfolio />
-      </section>
-      <section className="flex-container content-section" id="section5">
-        <Contact />
-      </section>
-      <Footer />
+      <CurrSectionProv>
+        <Header />
+        <section id="section1">
+          <Home />
+        </section>
+        <section className="flex-container content-section" id="section2">
+          <About />
+        </section>
+        <section className="flex-container content-section" id="section3">
+          <Services />
+        </section>
+        <section className="flex-container content-section" id="section4">
+          <Portfolio />
+        </section>
+        <section className="flex-container content-section" id="section5">
+          <Contact />
+        </section>
+        <Footer />
+      </CurrSectionProv>
     </div>
   );
 }

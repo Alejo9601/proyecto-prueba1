@@ -4,20 +4,18 @@ import PortfolioCard from "../components/PortfolioCard";
 import municipalidad from "../assets/img/municipalidad.png";
 import sisConv from "../assets/img/sisconv.jpg";
 import sisElectoral from "../assets/img/electoral.jpg";
-import ObserverContext from "../context/ObserverContext";
+import SectionContext from "../context/SectionContext";
 
 const Portfolio = () => {
   const flexContent = useRef();
-  const [observer, setElements, entries] = useContext(ObserverContext);
+  const activeSection = useContext(SectionContext);
 
   useEffect(() => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.target.id === "section4") {
-        flexContent.current.style.opacity = 1;
-        flexContent.current.style.visibility = "visible";
-      }
-    });
-  }, [entries, observer]);
+    if (activeSection === "portfolio") {
+      flexContent.current.style.opacity = 1;
+      flexContent.current.style.visibility = "visible";
+    }
+  }, [activeSection]);
 
   return (
     <>

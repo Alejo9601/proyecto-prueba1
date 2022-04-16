@@ -11,6 +11,7 @@ const useScrollObserver = () => {
         setIsScrolled(false);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
   }, []);
   return isScrolled;

@@ -8,20 +8,18 @@ import node from "../assets/icons/nodejs.png";
 import git from "../assets/icons/git.png";
 import cv from "../assets/cv.pdf";
 import RefButton from "../components/RefButton";
-import ObserverContext from "../context/ObserverContext";
+import SectionContext from "../context/SectionContext";
 
 const AboutMe = () => {
   const flexContent = useRef();
-  const [observer, setElements, entries] = useContext(ObserverContext);
+  const activeSection = useContext(SectionContext);
 
   useEffect(() => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.target.id === "section2") {
-        flexContent.current.style.opacity = 1;
-        flexContent.current.style.visibility = "visible";
-      }
-    });
-  }, [entries, observer]);
+    if (activeSection === "about") {
+      flexContent.current.style.opacity = 1;
+      flexContent.current.style.visibility = "visible";
+    }
+  }, [activeSection]);
 
   return (
     <>

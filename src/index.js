@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import "./styles/normalize.css";
 import App from "./App";
-import { ObserverProvider } from "./context/ObserverContext";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ObserverProvider>
-      <App />
-    </ObserverProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
