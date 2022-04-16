@@ -3,25 +3,16 @@ import { Link } from "react-scroll";
 import SectionContext from "../context/SectionContext";
 
 const NavigationLink = ({ toggleMenu, refTo, textValue }) => {
-  const mobileClasses = {
-    navLink: "mobile-nav-links",
-    navItem: "mobile-nav-item",
-  };
-
-  const desktopClasses = {
-    navLink: "desktop-nav-links",
-    navItem: "desktop-nav-item",
+  const classes = {
+    deskItem: "desktop-nav-item",
+    mobItem: "mobile-nav-item",
   };
 
   const activeSection = useContext(SectionContext);
 
   return (
     <>
-      <li
-        className={
-          toggleMenu != null ? mobileClasses.navItem : desktopClasses.navItem
-        }
-      >
+      <li className={toggleMenu != null ? classes.mobItem : classes.deskItem}>
         <Link
           className={activeSection === refTo ? "link active" : "link"}
           to={refTo}

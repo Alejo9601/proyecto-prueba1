@@ -1,19 +1,14 @@
 import NavigationLink from "./NavigationLink";
 
 const Navegation = ({ useToggleMenu, isMobile }) => {
-  const mobileClasses = {
-    navLink: "mobile-nav-links",
-    navItem: "mobile-nav-item",
-  };
-
-  const desktopClasses = {
-    navLink: "desktop-nav-links",
-    navItem: "desktop-nav-item",
+  const classes = {
+    deskLink: "desktop-nav-links",
+    mobLink: "mobile-nav-links",
   };
 
   return (
     <>
-      <ul className={isMobile ? mobileClasses.navLink : desktopClasses.navLink}>
+      <ul className={isMobile ? classes.mobLink : classes.deskLink}>
         <NavigationLink
           toggleMenu={isMobile ? useToggleMenu : null}
           refTo="home"
