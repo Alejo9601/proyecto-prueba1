@@ -31,12 +31,12 @@ const AboutMe = () => {
           </h2>
           <h2 className="section-subtitle">Software engineer</h2>
           <p className="section-paragraph" id="about-me">
-            I am a Full Stack developer with experience building websites and
-            web applications. I specialize in JavaScript, and have professional
-            experience working with React. I am always seeking to improve my
-            skills and continue growing professionally in order to make valuable
-            contributions at the working group I am part of. Therefore I use the
-            modern development workflow with CodeStream in order to increase
+            I am a Frontend developer with self-taught experience building
+            websites and web applications consuming API REST. I specialize in
+            JavaScript and REACT framework,i also have experience in object
+            oriented programming. I am always seeking to improve my skills and
+            continue growing professionally. Therefore I use the modern
+            development workflow with CodeStream in order to increase
             productivity and improve communication inside our development team.
           </p>
           <RefButton

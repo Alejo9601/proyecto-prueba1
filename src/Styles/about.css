@@ -35,7 +35,6 @@
   background-color: darkslategray;
 }
 
-
 /*-----------------------------------------------------------*/
 /*GRID SKILLS*/
 
@@ -80,5 +79,12 @@
 
   .grid-title {
     grid-column: span 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-description,
+  .about-skills {
+    margin: 0;
   }
 }

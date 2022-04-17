@@ -93,9 +93,13 @@
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .logo img#logo {
     height: 5rem;
     padding: 3px 30px 3px 30px;
+  }
+
+  #flex-mobile-menu {
+    padding: 0px 30px 0px 30px;
   }
 }
