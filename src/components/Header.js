@@ -1,4 +1,4 @@
-import logo from "../assets/icons/LogoCimacode.png";
+import logo from "../assets/icons/Logo.png";
 import "../styles/navbar.css";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
