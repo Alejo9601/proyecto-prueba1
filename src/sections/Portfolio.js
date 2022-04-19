@@ -1,10 +1,36 @@
 import { useContext, useEffect, useRef } from "react";
 import "../styles/portfolio.css";
 import PortfolioCard from "../components/PortfolioCard";
-import municipalidad from "../assets/img/municipalidad.png";
-import sisConv from "../assets/img/sisconv.jpg";
-import sisElectoral from "../assets/img/electoral.jpg";
 import SectionContext from "../context/SectionContext";
+
+const marvel = {
+  proyectName: "Marvel API",
+  technologies: "React.js - Styled Components",
+  urlRepo: "https://github.com/Alejo9601/marvel-api.git",
+  urlSite: "https://marvelsite.vercel.app",
+  img: "marvel.jpg",
+};
+const gubPage = {
+  proyectName: "Gubernamental Page",
+  technologies: "React - CSS",
+  urlRepo: "https://github.com/Alejo9601/gubernamental-website.git",
+  urlSite: "https://gubernamental-website.vercel.app",
+  img: "municipalidad.png",
+};
+const sisConv = {
+  proyectName: "SisCONV",
+  technologies: "Java - Hibernate - MySQL",
+  urlRepo: null,
+  urlSite: "https://github.com/Alejo9601/SisCONV.git",
+  img: "sisconv.jpg",
+};
+const webOnProcess = {
+  proyectName: "Web on Procces",
+  technologies: "I think i´ll use React.js",
+  urlRepo: "",
+  urlSite: "",
+  img: "webOnProcess.jpeg",
+};
 
 const Portfolio = () => {
   const flexContent = useRef();
@@ -22,44 +48,51 @@ const Portfolio = () => {
       <div className="flex-content portfolio" ref={flexContent}>
         <h1 className="section-title">Portfolio</h1>
         <h2 className="section-subtitle-intro">
-          These are some project i have worked on
+          These are some projects i have worked on
         </h2>
         <div className="grid-container" id="portfolio-detail">
+          {/* {() => {
+            console.log("entre a la funcion");
+            for (let i = 0; i <= 5; i++) {
+              return (
+                <PortfolioCard
+                  proyId={`Proyect-${i + 1}`}
+                  proyName={proyects[i].proyectName}
+                  usedTechs={proyects[i].technologies}
+                  proyImg={require(`../assets/img/${proyects[i].img}`)}
+                />
+              );
+            }
+          }} */}
           <PortfolioCard
-            proyId="proyect-one"
-            proyName="Municipio 28 de Noviembre"
-            usedTechs="Html - css - JavaScript"
-            proyImg={municipalidad}
+            proyName={gubPage.proyectName}
+            usedTechs={gubPage.technologies}
+            proyImg={require(`../assets/img/${gubPage.img}`)}
           />
           <PortfolioCard
-            proyId="proyect-two"
-            proyName="Sistema Electoral"
-            usedTechs="Html - css - JavaScript"
-            proyImg={sisConv}
+            proyName={marvel.proyectName}
+            usedTechs={marvel.technologies}
+            proyImg={require(`../assets/img/${marvel.img}`)}
           />
           <PortfolioCard
-            proyId="proyect-three"
-            proyName="Sis-CONV"
-            usedTechs="Html - css - JavaScript"
-            proyImg={sisElectoral}
+            proyName={sisConv.proyectName}
+            usedTechs={sisConv.technologies}
+            proyImg={require(`../assets/img/${sisConv.img}`)}
           />
           <PortfolioCard
-            proyId="proyect-one"
-            proyName="Municipio 28 de Noviembre"
-            usedTechs="Html - css - JavaScript"
-            proyImg={municipalidad}
+            proyName={webOnProcess.proyectName}
+            usedTechs={webOnProcess.technologies}
+            proyImg={require(`../assets/img/${webOnProcess.img}`)}
           />
           <PortfolioCard
-            proyId="proyect-one"
-            proyName="Municipio 28 de Noviembre"
-            usedTechs="Html - css - JavaScript"
-            proyImg={municipalidad}
+            proyName={webOnProcess.proyectName}
+            usedTechs={webOnProcess.technologies}
+            proyImg={require(`../assets/img/${webOnProcess.img}`)}
           />
           <PortfolioCard
-            proyId="proyect-one"
-            proyName="Municipio 28 de Noviembre"
-            usedTechs="Html - css - JavaScript"
-            proyImg={municipalidad}
+            proyName={webOnProcess.proyectName}
+            usedTechs={webOnProcess.technologies}
+            proyImg={require(`../assets/img/${webOnProcess.img}`)}
           />
         </div>
       </div>

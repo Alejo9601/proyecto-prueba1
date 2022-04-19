@@ -1,10 +1,10 @@
 import RefButton from "./RefButton";
 
-const PortfolioCard = ({ proyId, proyName, proyImg, usedTechs }) => {
+const PortfolioCard = ({ proyName, proyImg, usedTechs, urlRepo, urlSite }) => {
   return (
     <>
       <div className="portfolio-item">
-        <picture className="image-container" id={proyId}>
+        <picture className="image-container">
           <source type="image/png" srcSet={proyImg} />
           <img className="card-image" alt="portfolio-item"></img>
         </picture>
@@ -18,12 +18,12 @@ const PortfolioCard = ({ proyId, proyName, proyImg, usedTechs }) => {
           <div className="flex-container" id="buttons-box">
             <RefButton
               className="link-website"
-              reference={null}
+              reference={urlSite}
               btnText="Website"
             />
             <RefButton
               className="link-repo"
-              reference={null}
+              reference={urlRepo}
               btnText="GitHub"
             />
           </div>
