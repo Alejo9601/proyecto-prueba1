@@ -20,12 +20,12 @@ const gubPage = {
 const sisConv = {
   proyectName: "SisCONV",
   technologies: "Java - Hibernate - MySQL",
-  urlRepo: null,
-  urlSite: "https://github.com/Alejo9601/SisCONV.git",
+  urlRepo: "https://github.com/Alejo9601/SisCONV.git",
+  urlSite: "",
   img: "sisconv.jpg",
 };
 const webOnProcess = {
-  proyectName: "Web on Procces",
+  proyectName: "Web on Process",
   technologies: "I think i´ll use React.js",
   urlRepo: "",
   urlSite: "",
@@ -68,16 +68,21 @@ const Portfolio = () => {
             proyName={gubPage.proyectName}
             usedTechs={gubPage.technologies}
             proyImg={require(`../assets/img/${gubPage.img}`)}
+            urlRepo={gubPage.urlRepo}
+            urlSite={gubPage.urlSite}
           />
           <PortfolioCard
             proyName={marvel.proyectName}
             usedTechs={marvel.technologies}
             proyImg={require(`../assets/img/${marvel.img}`)}
+            urlRepo={marvel.urlRepo}
+            urlSite={marvel.urlSite}
           />
           <PortfolioCard
             proyName={sisConv.proyectName}
             usedTechs={sisConv.technologies}
             proyImg={require(`../assets/img/${sisConv.img}`)}
+            urlRepo={sisConv.urlRepo}
           />
           <PortfolioCard
             proyName={webOnProcess.proyectName}
