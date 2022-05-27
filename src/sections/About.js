@@ -1,14 +1,9 @@
 import { useContext, useEffect, useRef } from "react";
 import "../styles/about.css";
-import css from "../assets/icons/css-3.png";
-import html from "../assets/icons/html-5.png";
-import javascript from "../assets/icons/js.png";
-import react from "../assets/icons/react.png";
-import node from "../assets/icons/nodejs.png";
-import git from "../assets/icons/git.png";
 import cv from "../assets/cv.pdf";
 import RefButton from "../components/RefButton";
 import SectionContext from "../context/SectionContext";
+import icons from "../assets/json/icons.json";
 
 const AboutMe = () => {
   const flexContent = useRef();
@@ -46,35 +41,19 @@ const AboutMe = () => {
         </section>
         <section className="grid-container about-skills">
           <h2 className="section-subtitle grid-title">My Skills</h2>
-          <div className="flex-container skill-container">
-            <img src={html} className="img-64px" id="html" alt="html" />
-            <h3 className="img-description">html</h3>
-          </div>
-          <div className="flex-container skill-container">
-            <img src={css} className="img-64px" id="css" alt="css" />
-            <h3 className="img-description">css</h3>
-          </div>
-          <div className="flex-container skill-container">
-            <img
-              src={javascript}
-              className="img-64px"
-              id="javascript"
-              alt="javascript"
-            />
-            <h3 className="img-description">javascript</h3>
-          </div>
-          <div className="flex-container skill-container">
-            <img src={react} className="img-64px" id="react" alt="react" />
-            <h3 className="img-description">react</h3>
-          </div>
-          <div className="flex-container skill-container">
-            <img src={node} className="img-64px" id="node" alt="node.js" />
-            <h3 className="img-description">node.js</h3>
-          </div>
-          <div className="flex-container skill-container">
-            <img src={git} className="img-64px" id="git" alt="git" />
-            <h3 className="img-description">git</h3>
-          </div>
+          {icons.map((icon) => {
+            return (
+              <div className="flex-container skill-container">
+                <img
+                  src={require(`../assets/icons/${icon.fileName}`)}
+                  className="img-64px"
+                  id={icon.name}
+                  alt={icon.name}
+                />
+                <h3 className="img-description">{icon.name}</h3>
+              </div>
+            );
+          })}
         </section>
       </div>
     </>

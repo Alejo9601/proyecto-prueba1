@@ -1,0 +1,8 @@
+[
+    {"fileName": "css-3.png", "name": "css"},
+    {"fileName": "html-5.png", "name": "html"},
+    {"fileName": "js.png", "name": "javascript"},
+    {"fileName":"react.png", "name": "react"},
+    {"fileName":"nodejs.png", "name": "node"},
+    {"fileName":"git.png", "name": "git"}
+]
