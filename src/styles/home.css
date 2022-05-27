@@ -24,10 +24,11 @@
 }
 
 .profile-image {
-  height: 27rem;
+  height: 30rem;
   width: auto;
   border-radius: 50%;
-  padding: 15px;
+  transform: rotate(20deg);
+  border: 3px solid white;
 }
 
 #profile-text-container {
