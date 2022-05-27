@@ -1,14 +1,14 @@
 [
     {
-      "proyectName": "Marvel API",
+      "proyectName": "Marvel Characters",
       "technologies": "React.js - Styled Components",
       "urlRepo": "https://github.com/Alejo9601/marvel-api.git",
       "urlSite": "https://marvelsite.vercel.app",
       "img": "MarvelSite.PNG"
     },
     {
-      "proyectName": "Gubernamental Page",
-      "technologies": "React - CSS",
+      "proyectName": "Gubernamental Page (Template)",
+      "technologies": "React.js",
       "urlRepo": "https://github.com/Alejo9601/gubernamental-website.git",
       "urlSite": "https://gubernamental-website.vercel.app",
       "img": "GubernamentalPage.png"
