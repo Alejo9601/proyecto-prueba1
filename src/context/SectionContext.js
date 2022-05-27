@@ -9,7 +9,7 @@ const CurrentSectionProvider = ({ children }) => {
   const [activeSection, setActiveSection] = useState("home");
 
   const [observer, setElements, entries] = useObserver({
-    threshold: isMobile ? 0.2 : 0.55,
+    threshold: isMobile ? 0.2 : [0.65],
     root: null,
   });
 
