@@ -5,7 +5,7 @@ import RefButton from "../components/RefButton";
 import SectionContext from "../context/SectionContext";
 import icons from "../assets/json/icons.json";
 
-const AboutMe = () => {
+const About = () => {
   const flexContent = useRef();
   const activeSection = useContext(SectionContext);
 
@@ -58,4 +58,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default About;
