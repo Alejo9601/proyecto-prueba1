@@ -2,37 +2,38 @@ import { useContext, useEffect, useRef } from "react";
 import "../styles/portfolio.css";
 import PortfolioCard from "../components/PortfolioCard";
 import SectionContext from "../context/SectionContext";
+import proyects from "../assets/json/proyects.json";
 
-const proyects = [
-  {
-    proyectName: "Marvel API",
-    technologies: "React.js - Styled Components",
-    urlRepo: "https://github.com/Alejo9601/marvel-api.git",
-    urlSite: "https://marvelsite.vercel.app",
-    img: "marvel.jpg",
-  },
-  {
-    proyectName: "Gubernamental Page",
-    technologies: "React - CSS",
-    urlRepo: "https://github.com/Alejo9601/gubernamental-website.git",
-    urlSite: "https://gubernamental-website.vercel.app",
-    img: "municipalidad.png",
-  },
-  {
-    proyectName: "SisCONV",
-    technologies: "Java - Hibernate - MySQL",
-    urlRepo: "https://github.com/Alejo9601/SisCONV.git",
-    urlSite: "",
-    img: "sisconv.jpg",
-  },
-  {
-    proyectName: "Web on Process",
-    technologies: "I think i´ll use React.js",
-    urlRepo: "",
-    urlSite: "",
-    img: "webOnProcess.jpeg",
-  },
-];
+// const proyects = [
+//   {
+//     proyectName: "Marvel API",
+//     technologies: "React.js - Styled Components",
+//     urlRepo: "https://github.com/Alejo9601/marvel-api.git",
+//     urlSite: "https://marvelsite.vercel.app",
+//     img: "marvel.jpg",
+//   },
+//   {
+//     proyectName: "Gubernamental Page",
+//     technologies: "React - CSS",
+//     urlRepo: "https://github.com/Alejo9601/gubernamental-website.git",
+//     urlSite: "https://gubernamental-website.vercel.app",
+//     img: "municipalidad.png",
+//   },
+//   {
+//     proyectName: "SisCONV",
+//     technologies: "Java - Hibernate - MySQL",
+//     urlRepo: "https://github.com/Alejo9601/SisCONV.git",
+//     urlSite: "",
+//     img: "sisconv.jpg",
+//   },
+//   {
+//     proyectName: "Web on Process",
+//     technologies: "I think i´ll use React.js",
+//     urlRepo: "",
+//     urlSite: "",
+//     img: "webOnProcess.jpeg",
+//   },
+// ];
 
 const Portfolio = () => {
   const flexContent = useRef();
