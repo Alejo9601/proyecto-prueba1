@@ -6,36 +6,19 @@ const Navegation = ({ useToggleMenu, isMobile }) => {
     mobLink: "mobile-nav-links",
   };
 
+  const links = ["home", "About", "Services", "Portfolio", "Contact"];
   return (
-    <>
-      <ul className={isMobile ? classes.mobLink : classes.deskLink}>
-        <NavigationLink
-          toggleMenu={isMobile ? useToggleMenu : null}
-          refTo="home"
-          textValue="Home"
-        />
-        <NavigationLink
-          toggleMenu={isMobile ? useToggleMenu : null}
-          refTo="about"
-          textValue="About"
-        />
-        <NavigationLink
-          toggleMenu={isMobile ? useToggleMenu : null}
-          refTo="services"
-          textValue="Services"
-        />
-        <NavigationLink
-          toggleMenu={isMobile ? useToggleMenu : null}
-          refTo="portfolio"
-          textValue="Portfolio"
-        />
-        <NavigationLink
-          toggleMenu={isMobile ? useToggleMenu : null}
-          refTo="contact"
-          textValue="Contact"
-        />
-      </ul>
-    </>
+    <ul className={isMobile ? classes.mobLink : classes.deskLink}>
+      {links.map((link) => {
+        return (
+          <NavigationLink
+            toggleMenu={isMobile ? useToggleMenu : null}
+            refTo={link.toLowerCase()}
+            textValue={link}
+          />
+        );
+      })}
+    </ul>
   );
 };
 
