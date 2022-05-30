@@ -3,7 +3,7 @@ import "../styles/about.css";
 import cv from "../assets/cv.pdf";
 import RefButton from "../components/RefButton";
 import SectionContext from "../context/SectionContext";
-import icons from "../assets/json/icons.json";
+import skills from "../assets/json/skills.json";
 
 const About = () => {
   const flexContent = useRef();
@@ -40,16 +40,16 @@ const About = () => {
       </section>
       <section className="grid-container about-skills">
         <h2 className="section-subtitle grid-title">My Skills</h2>
-        {icons.map((icon) => {
+        {skills.map((skill) => {
           return (
             <div className="flex-container skill-container">
               <img
-                src={require(`../assets/icons/${icon.fileName}`)}
+                src={require(`../assets/icons/${skill.img}`)}
                 className="img-64px"
-                id={icon.name}
-                alt={icon.name}
+                id={skill.name}
+                alt={skill.name}
               />
-              <h3 className="img-description">{icon.name}</h3>
+              <h3 className="img-description">{skill.name}</h3>
             </div>
           );
         })}
