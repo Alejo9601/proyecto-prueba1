@@ -1,0 +1,32 @@
+[
+    {
+     "serviceName": "Fully Responsive",
+     "description": "Your site will display properly on any device, including desktop computers, tablets and mobile phones.",
+     "img": "smartphone.png" 
+    },
+    {
+     "serviceName": "Creative Design",
+     "description": "A good and attractive web design helps you keep your leads on your site, which is the digital face of your business.",
+     "img": "graphic-design.png"   
+    },
+    {
+     "serviceName": "Development",
+     "description": "I know the importance of web design and can help you create a website you’ll love.",
+     "img": "web-development.png"
+    },
+    {
+     "serviceName": "Social Media Integration",
+     "description": "There are a lot of social platforms out there, and you should promote your presence on them on your website",
+     "img": "social-media.png"
+    },
+    {
+     "serviceName": "Performance",
+     "description": "Retaining users is crucial to improving conversions. High-performing sites engage and retain users",
+     "img": "performance.png"
+    },
+    {
+    "serviceName": "SEO",
+     "description": "I will optimize your site with intelligent Search Engine Optimization strategy to generate leads.",
+     "img": "seo.png"
+    }
+]
