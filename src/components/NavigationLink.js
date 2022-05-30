@@ -11,19 +11,17 @@ const NavigationLink = ({ toggleMenu, refTo, textValue }) => {
   const activeSection = useContext(SectionContext);
 
   return (
-    <>
-      <li className={toggleMenu != null ? classes.mobItem : classes.deskItem}>
-        <Link
-          className={activeSection === refTo ? "link active" : "link"}
-          to={refTo}
-          onClick={toggleMenu}
-          smooth="true"
-          offset={-50}
-        >
-          {textValue}
-        </Link>
-      </li>
-    </>
+    <li className={toggleMenu != null ? classes.mobItem : classes.deskItem}>
+      <Link
+        className={activeSection === refTo ? "link active" : "link"}
+        to={refTo}
+        onClick={toggleMenu}
+        smooth="true"
+        offset={-50}
+      >
+        {textValue}
+      </Link>
+    </li>
   );
 };
 
