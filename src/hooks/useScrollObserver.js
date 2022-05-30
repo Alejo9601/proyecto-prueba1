@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-const useScrollObserver = () => {
+const useScrollObserver = (target) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 93) {
+      if (window.pageYOffset > target) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
