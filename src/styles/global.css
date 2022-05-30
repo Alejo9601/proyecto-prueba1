@@ -120,6 +120,10 @@ body {
   padding: 5px;
 }
 
+.btn-disabled {
+  pointer-events: none;
+}
+
 p,
 li,
 h1,
