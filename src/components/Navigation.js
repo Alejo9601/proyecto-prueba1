@@ -6,7 +6,8 @@ const Navegation = ({ useToggleMenu, isMobile }) => {
     mobLink: "mobile-nav-links",
   };
 
-  const links = ["home", "About", "Services", "Portfolio", "Contact"];
+  const links = ["Home", "About", "Services", "Portfolio", "Contact"];
+
   return (
     <ul className={isMobile ? classes.mobLink : classes.deskLink}>
       {links.map((link) => {
