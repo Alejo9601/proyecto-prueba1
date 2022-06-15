@@ -14,17 +14,17 @@
       "img": "GubernamentalPage.png"
     },
     {
+      "proyectName": "Giffyall",
+      "technologies": "React.js - Styled Components",
+      "urlRepo": "https://github.com/Alejo9601/giffyall.git",
+      "urlSite": "https://giffyall.vercel.app",
+      "img": "giffyall.png"
+    },
+    {
       "proyectName": "SisCONV",
       "technologies": "Java - Hibernate - MySQL",
       "urlRepo": "https://github.com/Alejo9601/SisCONV.git",
       "urlSite": "",
       "img": "sisconv.jpg"
-    },
-    {
-      "proyectName": "Web on Process",
-      "technologies": "I think i´ll use React.js",
-      "urlRepo": "",
-      "urlSite": "",
-      "img": "webOnProcess.jpeg"
     }
   ]
