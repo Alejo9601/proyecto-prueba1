@@ -4,5 +4,6 @@
     {"img": "js.png", "name": "javascript"},
     {"img":"react.png", "name": "react"},
     {"img":"nodejs.png", "name": "node"},
-    {"img":"git.png", "name": "git"}
+    {"img":"git.png", "name": "git"},
+    {"img":"mongoDB.png", "name": "Mongo DB"}
 ]
