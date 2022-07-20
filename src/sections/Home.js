@@ -13,7 +13,7 @@ const Home = () => {
         <div id="profile-text-container">
           <h2> Hi!</h2>
           <h1>I'm Alejandro Juarez</h1>
-          <p>Frontend developer</p>
+          <p>Full Stack Developer</p>
         </div>
       </div>
     </section>
