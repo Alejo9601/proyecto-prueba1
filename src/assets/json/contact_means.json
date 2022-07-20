@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Gmail",
+        "icon": "gmail.png",
+        "link": "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPGFjDGBffFvZLjSNnFgScgtNRFHgRpnfxPCXqGNjBzMPThptSbJtzLSCQpPSXpwStVPzdH"
+    },
+    {
+        "name": "Github",
+        "icon": "github.png",
+        "link": "https://github.com/Alejo9601"
+    },
+    {
+        "name": "Twitter",
+        "icon": "twitter.png",
+        "link": "https://twitter.com/AlejandroJ1896"
+    },
+    {
+        "name": "Linkedin",
+        "icon": "linkedin.png",
+        "link": "https://www.linkedin.com/in/alejandro-juarez96"
+    }
+]

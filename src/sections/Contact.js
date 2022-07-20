@@ -1,10 +1,12 @@
 import { useContext, useEffect, useRef } from "react";
 import "../styles/contact.css";
-import gmail from "../assets/icons/gmail.png";
-import github from "../assets/icons/github.png";
-import twitter from "../assets/icons/twitter.png";
-import linkedin from "../assets/icons/linkedin.png";
+import contactMeans from "../assets/json/contact_means.json";
+// import gmail from "../assets/icons/gmail.png";
+// import github from "../assets/icons/github.png";
+// import twitter from "../assets/icons/twitter.png";
+// import linkedin from "../assets/icons/linkedin.png";
 import SectionContext from "../context/SectionContext";
+import ContactItem from "../components/ContactItem";
 
 const Contact = () => {
   const flexContent = useRef();
@@ -23,7 +25,16 @@ const Contact = () => {
       <h2 className="section-subtitle-intro">
         Contact me if you want us to work together
       </h2>
-      <div className="flex-container contact-item" id="">
+      {contactMeans.map((mean) => {
+        return (
+          <ContactItem
+            img={mean.icon}
+            refTo={mean.link}
+            descriptionTag={mean.name}
+          />
+        );
+      })}
+      {/* <div className="flex-container contact-item" id="">
         <a
           href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPGFjDGBffFvZLjSNnFgScgtNRFHgRpnfxPCXqGNjBzMPThptSbJtzLSCQpPSXpwStVPzdH"
           target="_blank"
@@ -61,7 +72,7 @@ const Contact = () => {
           <img className="img-640px" src={linkedin} alt="" />
         </a>
         <h3 className="img-description contact-label">Contact Me</h3>
-      </div>
+      </div> */}
     </div>
   );
 };
