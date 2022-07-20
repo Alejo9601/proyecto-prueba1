@@ -5,6 +5,7 @@ import RefButton from "../components/RefButton";
 import SectionContext from "../context/SectionContext";
 import skills from "../assets/json/skills.json";
 import SkillItem from "../components/SkillItem";
+import AboutSkills from "../components/AboutSkills";
 
 const About = () => {
   const flexContent = useRef();
@@ -39,12 +40,7 @@ const About = () => {
           btnText="Download CV"
         />
       </section>
-      <section className="grid-container about-skills">
-        <h2 className="section-subtitle grid-title">My Skills</h2>
-        {skills.map((skill) => {
-          return <SkillItem skillName={skill.name} skillImg={skill.img} />;
-        })}
-      </section>
+      <AboutSkills />
     </div>
   );
 };
