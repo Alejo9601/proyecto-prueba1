@@ -5,7 +5,7 @@ import SectionContext from "../context/SectionContext";
 import ContactItem from "../components/ContactItem";
 import { showSection } from "../helpers/showSection";
 import SectionTitle from "../components/SectionTitle";
-import SectionSubtitle from "../components/SectionSubtitle";
+import SectionIntro from "../components/SectionIntro";
 
 const Contact = () => {
   const sectionRef = useRef();
@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <section className="flex-content contact" ref={sectionRef}>
       <SectionTitle textTitle="Contact" />
-      <SectionSubtitle textTitle="Contact me if you want us to work together" />
+      <SectionIntro textTitle="Contact me if you want us to work together" />
       {contactMeans.map((mean, index) => {
         return (
           <ContactItem

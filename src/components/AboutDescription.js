@@ -5,9 +5,9 @@ const AboutDescription = () => {
   return (
     <section className="about-description">
       <h2 className="section-subtitle">
-        I´m Alejandro Juarez - Systems Analyst /
+        I´m Alejandro Juarez - Systems Analyst / <br></br>
+        Web Developer
       </h2>
-      <h2 className="section-subtitle">Web Developer</h2>
       <p className="section-paragraph" id="about-me">
         Frontend developer with self-taught experience building websites and web
         applications, particularly, I specialize in REACT framework. I also have
