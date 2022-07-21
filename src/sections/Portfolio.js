@@ -5,6 +5,7 @@ import SectionContext from "../context/SectionContext";
 import projects from "../assets/json/projects.json";
 import { showSection } from "../helpers/showSection";
 import SectionTitle from "../components/SectionTitle";
+import SectionSubtitle from "../components/SectionSubtitle";
 
 const Portfolio = () => {
   const sectionRef = useRef();
@@ -17,9 +18,7 @@ const Portfolio = () => {
   return (
     <section className="flex-content portfolio" ref={sectionRef}>
       <SectionTitle textTitle="Portfolio" />
-      <h2 className="section-subtitle-intro">
-        These are some projects i have worked on
-      </h2>
+      <SectionSubtitle textTitle="These are some projects i have worked on" />
       <div className="grid-container" id="portfolio-detail">
         {projects.map((proy, index) => {
           return (
