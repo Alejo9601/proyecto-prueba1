@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef } from "react";
 import "../styles/portfolio.css";
 import PortfolioCard from "../components/PortfolioCard";
 import SectionContext from "../context/SectionContext";
-import proyects from "../assets/json/proyects.json";
+import projects from "../assets/json/projects.json";
 
 const Portfolio = () => {
   const flexContent = useRef();
@@ -22,7 +22,7 @@ const Portfolio = () => {
         These are some projects i have worked on
       </h2>
       <div className="grid-container" id="portfolio-detail">
-        {proyects.map((proy) => {
+        {projects.map((proy) => {
           return (
             <PortfolioCard
               proyName={proy.proyectName}
