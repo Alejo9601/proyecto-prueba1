@@ -4,6 +4,7 @@ import PortfolioCard from "../components/PortfolioCard";
 import SectionContext from "../context/SectionContext";
 import projects from "../assets/json/projects.json";
 import { showSection } from "../helpers/showSection";
+import SectionTitle from "../components/SectionTitle";
 
 const Portfolio = () => {
   const sectionRef = useRef();
@@ -15,7 +16,7 @@ const Portfolio = () => {
 
   return (
     <section className="flex-content portfolio" ref={sectionRef}>
-      <h1 className="section-title">Portfolio</h1>
+      <SectionTitle textTitle="Portfolio" />
       <h2 className="section-subtitle-intro">
         These are some projects i have worked on
       </h2>

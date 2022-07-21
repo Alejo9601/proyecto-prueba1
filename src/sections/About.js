@@ -4,6 +4,7 @@ import SectionContext from "../context/SectionContext";
 import AboutSkills from "../components/AboutSkills";
 import AboutDescription from "../components/AboutDescription";
 import { showSection } from "../helpers/showSection";
+import SectionTitle from "../components/SectionTitle";
 
 const About = () => {
   const sectionRef = useRef();
@@ -15,7 +16,7 @@ const About = () => {
 
   return (
     <section className="flex-content about" ref={sectionRef}>
-      <h1 className="section-title">About Me</h1>
+      <SectionTitle textTitle="About Me" />
       <AboutDescription />
       <AboutSkills />
     </section>

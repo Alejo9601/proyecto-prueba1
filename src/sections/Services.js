@@ -4,6 +4,7 @@ import services from "../assets/json/services.json";
 import SectionContext from "../context/SectionContext";
 import ServiceItem from "../components/ServiceItem";
 import { showSection } from "../helpers/showSection";
+import SectionTitle from "../components/SectionTitle";
 
 const Services = () => {
   const sectionRef = useRef();
@@ -15,7 +16,7 @@ const Services = () => {
 
   return (
     <section className="flex-content services" ref={sectionRef}>
-      <h1 className="section-title">Services</h1>
+      <SectionTitle textTitle="Services" />
       <h2 className="section-subtitle-intro">Services i offer to my clients</h2>
       <div className="grid-container" id="services-detail">
         {services.map((service, index) => {
