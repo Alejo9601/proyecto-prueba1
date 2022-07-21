@@ -14,11 +14,11 @@
       "img": "GubernamentalPage.png"
     },
     {
-      "proyectName": "Giffyall",
-      "technologies": "React.js - Styled Components",
-      "urlRepo": "https://github.com/Alejo9601/giffyall.git",
-      "urlSite": "https://giffyall.vercel.app",
-      "img": "giffyall.png"
+      "proyectName": "To do list (Front to End)",
+      "technologies": "React - Node - Express - Mongo DB",
+      "urlRepo": "https://github.com/Alejo9601/notes-backend",
+      "urlSite": "https://dailynotes-fullstack.vercel.app",
+      "img": "ToDoList.png"
     },
     {
       "proyectName": "SisCONV",
@@ -26,5 +26,12 @@
       "urlRepo": "https://github.com/Alejo9601/SisCONV.git",
       "urlSite": "",
       "img": "sisconv.jpg"
+    },
+    {
+      "proyectName": "Giffyall",
+      "technologies": "React.js - Styled Components",
+      "urlRepo": "https://github.com/Alejo9601/giffyall.git",
+      "urlSite": "https://giffyall.vercel.app",
+      "img": "giffyall.png"
     }
   ]
