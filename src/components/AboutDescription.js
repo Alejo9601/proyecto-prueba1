@@ -9,10 +9,10 @@ const AboutDescription = () => {
         Web Developer
       </h2>
       <p className="section-paragraph" id="about-me">
-        Frontend developer with self-taught experience building websites and web
-        applications, particularly, I specialize in REACT framework. I also have
-        object-oriented programming experience building native applications with
-        JAVA during college. I am always seeking to improve my skills and
+        Full Stack developer with self-taught experience building websites and
+        web applications, particularly specialized in REACT framework. I also
+        have object-oriented programming experience building native applications
+        with JAVA during college. I am always seeking to improve my skills and
         continue growing professionally, in order to be able to integrate a
         development team in my first job.
       </p>
