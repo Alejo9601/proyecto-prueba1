@@ -25,7 +25,7 @@ const Portfolio = () => {
             <PortfolioCard
               proyName={proy.proyectName}
               usedTechs={proy.technologies}
-              proyImg={require(`../assets/img/${proy.img}`)}
+              proyImg={proy.img}
               urlRepo={proy.urlRepo}
               urlSite={proy.urlSite}
             />
