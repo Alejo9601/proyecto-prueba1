@@ -4,7 +4,7 @@ const PortfolioCard = ({ proyName, proyImg, usedTechs, urlRepo, urlSite }) => {
   return (
     <div className="portfolio-item">
       <picture className="image-container">
-        <source type="image/png" srcSet={`../assets/img/${proyImg}`} />
+        <source type="image/png" srcSet={require(`../assets/img/${proyImg}`)} />
         <img className="card-image" alt="portfolio-item"></img>
       </picture>
       <div className="flex-container item-overlay">
