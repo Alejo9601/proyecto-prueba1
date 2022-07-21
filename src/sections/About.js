@@ -3,24 +3,22 @@ import "../styles/about.css";
 import SectionContext from "../context/SectionContext";
 import AboutSkills from "../components/AboutSkills";
 import AboutDescription from "../components/AboutDescription";
+import { showSection } from "../helpers/showSection";
 
 const About = () => {
-  const flexContent = useRef();
+  const sectionRef = useRef();
   const activeSection = useContext(SectionContext);
 
   useEffect(() => {
-    if (activeSection === "about") {
-      flexContent.current.style.opacity = 1;
-      flexContent.current.style.visibility = "visible";
-    }
+    if (activeSection === "about") showSection(sectionRef);
   }, [activeSection]);
 
   return (
-    <div className="flex-content about" ref={flexContent}>
+    <section className="flex-content about" ref={sectionRef}>
       <h1 className="section-title">About Me</h1>
       <AboutDescription />
       <AboutSkills />
-    </div>
+    </section>
   );
 };
 

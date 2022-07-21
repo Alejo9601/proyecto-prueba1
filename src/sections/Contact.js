@@ -3,20 +3,18 @@ import "../styles/contact.css";
 import contactMeans from "../assets/json/contact_means.json";
 import SectionContext from "../context/SectionContext";
 import ContactItem from "../components/ContactItem";
+import { showSection } from "../helpers/showSection";
 
 const Contact = () => {
-  const flexContent = useRef();
+  const sectionRef = useRef();
   const activeSection = useContext(SectionContext);
 
   useEffect(() => {
-    if (activeSection === "contact") {
-      flexContent.current.style.opacity = 1;
-      flexContent.current.style.visibility = "visible";
-    }
+    if (activeSection === "contact") showSection(sectionRef);
   }, [activeSection]);
 
   return (
-    <div className="flex-content contact" ref={flexContent}>
+    <section className="flex-content contact" ref={sectionRef}>
       <h1 className="section-title">Contact</h1>
       <h2 className="section-subtitle-intro">
         Contact me if you want us to work together
@@ -30,7 +28,7 @@ const Contact = () => {
           />
         );
       })}
-    </div>
+    </section>
   );
 };
 

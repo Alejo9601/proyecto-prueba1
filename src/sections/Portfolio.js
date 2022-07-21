@@ -3,20 +3,18 @@ import "../styles/portfolio.css";
 import PortfolioCard from "../components/PortfolioCard";
 import SectionContext from "../context/SectionContext";
 import projects from "../assets/json/projects.json";
+import { showSection } from "../helpers/showSection";
 
 const Portfolio = () => {
-  const flexContent = useRef();
+  const sectionRef = useRef();
   const activeSection = useContext(SectionContext);
 
   useEffect(() => {
-    if (activeSection === "portfolio") {
-      flexContent.current.style.opacity = 1;
-      flexContent.current.style.visibility = "visible";
-    }
+    if (activeSection === "portfolio") showSection(sectionRef);
   }, [activeSection]);
 
   return (
-    <div className="flex-content portfolio" ref={flexContent}>
+    <section className="flex-content portfolio" ref={sectionRef}>
       <h1 className="section-title">Portfolio</h1>
       <h2 className="section-subtitle-intro">
         These are some projects i have worked on
@@ -34,7 +32,7 @@ const Portfolio = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 export default Portfolio;
