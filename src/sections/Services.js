@@ -18,9 +18,10 @@ const Services = () => {
       <h1 className="section-title">Services</h1>
       <h2 className="section-subtitle-intro">Services i offer to my clients</h2>
       <div className="grid-container" id="services-detail">
-        {services.map((service) => {
+        {services.map((service, index) => {
           return (
             <ServiceItem
+              key={index}
               name={service.serviceName}
               description={service.description}
               img={service.img}

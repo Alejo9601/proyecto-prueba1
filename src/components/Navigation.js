@@ -10,9 +10,10 @@ const Navegation = ({ useToggleMenu, isMobile }) => {
 
   return (
     <ul className={isMobile ? classes.mobLink : classes.deskLink}>
-      {links.map((link) => {
+      {links.map((link, index) => {
         return (
           <NavigationLink
+            key={index}
             toggleMenu={isMobile ? useToggleMenu : null}
             refTo={link.toLowerCase()}
             textValue={link}

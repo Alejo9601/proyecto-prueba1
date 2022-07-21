@@ -20,9 +20,10 @@ const Portfolio = () => {
         These are some projects i have worked on
       </h2>
       <div className="grid-container" id="portfolio-detail">
-        {projects.map((proy) => {
+        {projects.map((proy, index) => {
           return (
             <PortfolioCard
+              key={index}
               proyName={proy.proyectName}
               usedTechs={proy.technologies}
               proyImg={proy.img}

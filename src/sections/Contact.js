@@ -19,9 +19,10 @@ const Contact = () => {
       <h2 className="section-subtitle-intro">
         Contact me if you want us to work together
       </h2>
-      {contactMeans.map((mean) => {
+      {contactMeans.map((mean, index) => {
         return (
           <ContactItem
+            key={index}
             img={mean.icon}
             refTo={mean.link}
             descriptionTag={mean.name}
