@@ -13,10 +13,10 @@ const NavigationLink = ({ toggleMenu, refTo, textValue }) => {
     <li className={toggleMenu != null ? classes.mobItem : classes.deskItem}>
       <Link
         className={activeSection === refTo ? "link active" : "link"}
-        to={refTo}
+        to={refTo.toLowerCase()}
         onClick={toggleMenu}
         smooth="true"
-        offset={-50}
+        offset={-150}
       >
         {textValue}
       </Link>

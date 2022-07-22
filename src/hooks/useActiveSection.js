@@ -5,7 +5,7 @@ const useACtiveSection = () => {
   const [activeSection, setActiveSection] = useState("Home");
 
   const [observer, setElements, entries] = useObserver({
-    rootMargin: "-200px",
+    rootMargin: "-150px",
     root: null,
   });
 
