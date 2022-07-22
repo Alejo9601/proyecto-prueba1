@@ -4,10 +4,10 @@ import useObserver from "./useObserver";
 
 const useSectionObserver = () => {
   const isMobile = useMobileObserver();
-  const [intersectedSection, setIntersectedSection] = useState("home");
+  const [intersectedSection, setIntersectedSection] = useState();
 
   const [observer, setElements, entries] = useObserver({
-    threshold: isMobile ? 0.2 : 0.5,
+    threshold: isMobile ? 0.2 : 0.4,
     root: null,
   });
 
@@ -20,6 +20,7 @@ const useSectionObserver = () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         setIntersectedSection(entry.target.classList[1]);
+        observer.unobserve(entry.target);
       }
     });
   }, [entries, observer]);
