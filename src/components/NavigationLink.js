@@ -1,6 +1,5 @@
-import { useContext } from "react";
 import { Link } from "react-scroll";
-import SectionContext from "../context/SectionContext";
+import useACtiveSection from "../hooks/useActiveSection";
 
 const NavigationLink = ({ toggleMenu, refTo, textValue }) => {
   const classes = {
@@ -8,7 +7,7 @@ const NavigationLink = ({ toggleMenu, refTo, textValue }) => {
     mobItem: "mobile-nav-item",
   };
 
-  const activeSection = useContext(SectionContext);
+  const activeSection = useACtiveSection();
 
   return (
     <li className={toggleMenu != null ? classes.mobItem : classes.deskItem}>

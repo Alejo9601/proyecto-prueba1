@@ -7,7 +7,7 @@ const useSectionObserver = () => {
   const [intersectedSection, setIntersectedSection] = useState("home");
 
   const [observer, setElements, entries] = useObserver({
-    threshold: isMobile ? 0.2 : 0.65,
+    threshold: isMobile ? 0.2 : 0.5,
     root: null,
   });
 
