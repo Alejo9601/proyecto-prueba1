@@ -11,14 +11,14 @@ const useACtiveSection = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section-title");
-    const home = document.querySelector(".home");
+    const home = document.querySelector(".image-container");
     setElements(Array.from(sections).concat(home));
   }, [setElements]);
 
   useEffect(() => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        if (entry.target.classList[0] === "home") {
+        if (entry.target.classList[0] === "image-container") {
           setActiveSection("Home");
           return;
         }
