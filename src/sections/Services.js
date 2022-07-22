@@ -1,19 +1,19 @@
-import { useContext, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/services.css";
 import services from "../assets/json/services.json";
-import SectionContext from "../context/SectionContext";
 import ServiceItem from "../components/ServiceItem";
 import { showSection } from "../helpers/showSection";
 import SectionTitle from "../components/SectionTitle";
 import SectionIntro from "../components/SectionIntro";
+import useSectionObserver from "../hooks/useSectionObserver";
 
 const Services = () => {
   const sectionRef = useRef();
-  const activeSection = useContext(SectionContext);
+  const intersectedSection = useSectionObserver();
 
   useEffect(() => {
-    if (activeSection === "services") showSection(sectionRef);
-  }, [activeSection]);
+    if (intersectedSection === "services") showSection(sectionRef);
+  }, [intersectedSection]);
 
   return (
     <section className="flex-content services" ref={sectionRef}>

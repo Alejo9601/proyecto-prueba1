@@ -1,19 +1,19 @@
-import { useContext, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/portfolio.css";
 import PortfolioCard from "../components/PortfolioCard";
-import SectionContext from "../context/SectionContext";
 import projects from "../assets/json/projects.json";
 import { showSection } from "../helpers/showSection";
 import SectionTitle from "../components/SectionTitle";
 import SectionIntro from "../components/SectionIntro";
+import useSectionObserver from "../hooks/useSectionObserver";
 
 const Portfolio = () => {
   const sectionRef = useRef();
-  const activeSection = useContext(SectionContext);
+  const intersectedSection = useSectionObserver();
 
   useEffect(() => {
-    if (activeSection === "portfolio") showSection(sectionRef);
-  }, [activeSection]);
+    if (intersectedSection === "portfolio") showSection(sectionRef);
+  }, [intersectedSection]);
 
   return (
     <section className="flex-content portfolio" ref={sectionRef}>

@@ -1,18 +1,18 @@
-import { useContext, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/about.css";
-import SectionContext from "../context/SectionContext";
 import AboutSkills from "../components/AboutSkills";
 import AboutDescription from "../components/AboutDescription";
 import { showSection } from "../helpers/showSection";
 import SectionTitle from "../components/SectionTitle";
+import useSectionObserver from "../hooks/useSectionObserver";
 
 const About = () => {
   const sectionRef = useRef();
-  const activeSection = useContext(SectionContext);
+  const intersectedSection = useSectionObserver();
 
   useEffect(() => {
-    if (activeSection === "about") showSection(sectionRef);
-  }, [activeSection]);
+    if (intersectedSection === "about") showSection(sectionRef);
+  }, [intersectedSection]);
 
   return (
     <section className="flex-content about" ref={sectionRef}>
